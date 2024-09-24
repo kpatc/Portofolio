@@ -13,7 +13,7 @@ You can view the live version of my portfolio [**here**](https://kpatc.github.io
 
 ## 🖼️ Project Structure
 - `index.html` - The main landing page.
-- `css_JS_IMG/` - Stylesheets for the website JavaScript files for interactive elements Contains images used in the portfolio
+- `CSS_JS_IMG/` - Stylesheets for the website JavaScript files for interactive elements Contains images used in the portfolio
 
 ## 🚀 How to Use
 To run this project locally:
