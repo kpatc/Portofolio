@@ -5,14 +5,6 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 ## 🔗 Live Demo
 You can view the live version of my portfolio [**here**](https://kpatc.github.io/Portofolio/).
 
-## 🛠️ Technologies Used
-This portfolio is built with:
-- **HTML5** - The structure of the webpage.
-- **CSS3** - For styling and layout design.
-- **JavaScript** - Adding interactivity to the webpage.
-- **Bootstrap** - A responsive framework for quickly designing and developing the UI.
-- **GitHub Pages** - For deployment and hosting.
-
 ## 🎯 Features
 - Responsive design for all devices (desktop, tablet, mobile).
 - Showcases my professional projects and personal works.
@@ -21,9 +13,7 @@ This portfolio is built with:
 
 ## 🖼️ Project Structure
 - `index.html` - The main landing page.
-- `css/` - Stylesheets for the website.
-- `js/` - JavaScript files for interactive elements.
-- `images/` - Contains images used in the portfolio.
+- `css_JS_IMG/` - Stylesheets for the website JavaScript files for interactive elements Contains images used in the portfolio
 
 ## 🚀 How to Use
 To run this project locally:
