@@ -268,10 +268,19 @@ a:focus {
 }
 
 .hero .hero-image img {
-    width: 50%;
-    height: 50%;
+    /* Keep hero image responsive and nicely sized */
+    width: auto;
+    max-width: 350px; /* max size */
+    height: auto;
+    display: inline-block;
     /*border-radius: 50%;  Pour un contour totalement rond */
     /*border: 5px solid #1507da;*/
+}
+
+/* Hide the broken image icon (empty src or non-existent src) */
+.hero .hero-image img[src=""],
+.hero .hero-image img:not([src]) {
+    display: none !important;
 }
 
 .hero .hero-content {
