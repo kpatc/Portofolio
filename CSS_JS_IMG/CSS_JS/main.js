@@ -105,5 +105,10 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
     
+    // Hide broken images to avoid default broken image icon
+    $('img').on('error', function () {
+        $(this).hide();
+    });
+    
 })(jQuery);
 
