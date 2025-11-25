@@ -12,11 +12,10 @@
         <!--Boostrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Google Fonts: Inter (modern) + Montserrat fallback -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="https://ayushtankha.github.io/lib/animate/animate.min.css" rel="stylesheet">
         <link href="https://ayushtankha.github.io/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -35,17 +34,17 @@
     gtag('config', 'G-ZYLG6P2YM2');
     </script>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
         <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand">Portfolio</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
+                    <div class="navbar-nav ms-auto">
                         <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="#service" class="nav-item nav-link">Education</a>
@@ -82,7 +81,7 @@
                     <div class="col-sm-12 col-md-6 d-none d-md-block">
                         <div class="hero-image">
                             <!-- Use a hero portrait image if available; set a correct path or leave it empty to hide by CSS - improved accessibility alt text provided. -->
-                            <img src="CSS_JS_IMG/Image/img.jpeg" alt="Hero portrait">
+                            <img src="CSS_JS_IMG/Image/img.jpeg" alt="Hero portrait" loading="lazy" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -97,7 +96,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="CSS_JS_IMG/Image/11.JPG" alt="Image">
+                            <img src="CSS_JS_IMG/Image/11.JPG" alt="Profile Image" loading="lazy" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -157,7 +156,7 @@
                         <div class="service-item">
                             <div class="service-icon">
                                 <a href="https://www.ensah.ma" target="_blank">
-                                    <img src="CSS_JS_IMG/Image/ensah.png" alt="ENSAH Logo" style="width: 100px; height: 100px;">
+                                    <img src="CSS_JS_IMG/Image/ensah.png" alt="ENSAH Logo" style="width: 100px; height: 100px;" loading="lazy" class="img-fluid">
                                 </a>
                                 
                                 <!-- i class="fa fa-laptop"></i-->
@@ -191,7 +190,7 @@
                         <div class="service-item">
                             <div class="service-icon">
                                 <a href="https://www.ensaf.ac.ma" target="_blank">
-                                    <img src="CSS_JS_IMG/Image/ensaf.png" alt="ENSA Fès Logo" style="width: 100px; height: 100px;">
+                                    <img src="CSS_JS_IMG/Image/ensaf.png" alt="ENSA Fès Logo" style="width: 100px; height: 100px;" loading="lazy" class="img-fluid">
                                 </a>
                                 
                                 
@@ -304,7 +303,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/wheater.png" alt="Image">
+                                <img src="CSS_JS_IMG/Image/wheater.png" alt="Weather App" loading="lazy" class="img-fluid">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Weather App</h3>
@@ -315,7 +314,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/3dirm.png" alt="Image">
+                                <img src="CSS_JS_IMG/Image/3dirm.png" alt="3D Brain Segmentation" loading="lazy" class="img-fluid">
                             </div>
                             <div class="portfolio-text">
                                 <h3>3D Brain Tissue segmentation using Kolmogorov-Arnold Network (KAN)</h3>
@@ -326,7 +325,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/tweet.png" alt="Image">
+                                <img src="CSS_JS_IMG/Image/tweet.png" alt="Tweets Classification" loading="lazy" class="img-fluid">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Tweets Classification (Oracle Test)</h3>
@@ -337,7 +336,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/togofiber.png" alt="Image">
+                                <img src="CSS_JS_IMG/Image/togofiber.png" alt="Togo Fiber Project" loading="lazy" class="img-fluid">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Togo Fiber Optics Uptake Prediction Challenge</h3>
@@ -348,7 +347,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/softcartRelationships.png" alt="Image">
+                                <img src="CSS_JS_IMG/Image/softcartRelationships.png" alt="Data Engineering Capstone" loading="lazy" class="img-fluid">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Data-Engineering-Capstone-Project</h3>
@@ -377,7 +376,7 @@
                 </h4>
                 <div class="row align-items-center">
                     <div class="col-md-2 col-sm-3 mb-3 mb-md-0 ">
-                        <img src="CSS_JS_IMG/Image/etl.jpg" alt="etl" class="certificate-image img-fluid">
+                        <img src="CSS_JS_IMG/Image/etl.jpg" alt="ETL Certificate" class="certificate-image img-fluid" loading="lazy">
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp">
                         <h6 class="mb-1">Course | IBM</h6>
@@ -399,7 +398,7 @@
                 </h4>
                 <div class="row align-items-center">
                     <div class="col-md-2 col-sm-3 mb-3 mb-md-0">
-                        <img src="CSS_JS_IMG/Image/pythonpro.jpg" alt="SQL Project" class="certificate-image img-fluid">
+                        <img src="CSS_JS_IMG/Image/pythonpro.jpg" alt="Python Project Certificate" class="certificate-image img-fluid" loading="lazy">
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp">
                         <h6 class="mb-1">Course | IBM</h6>
@@ -421,7 +420,7 @@
                 </h4>
                 <div class="row align-items-center">
                     <div class="col-md-2 col-sm-3 mb-3 mb-md-0">
-                        <img src="CSS_JS_IMG/Image/python_data_science.png" alt="Analytics Project" class="certificate-image img-fluid">
+                        <img src="CSS_JS_IMG/Image/python_data_science.png" alt="Python Data Science" class="certificate-image img-fluid" loading="lazy">
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp"">
                         <h6 class="mb-1">Course | Data</h6>
@@ -443,7 +442,7 @@
                 </h4>
                 <div class="row align-items-center">
                     <div class="col-md-2 col-sm-3 mb-3 mb-md-0">
-                        <img src="path_to_aws_image.jpg" alt="AWS Project" class="certificate-image img-fluid">
+                        <img src="path_to_aws_image.jpg" alt="AWS Project" class="certificate-image img-fluid" loading="lazy">
                     </div>
                     <div class="col-md-7 col-sm-9 mb-3 mb-md-0">
                         <h6 class="mb-1">Cours | AWS</h6>
@@ -488,7 +487,7 @@
                 <div class="owl-carousel testimonials-carousel">
                     <div class="testimonial-item">
                         <div class="testimonial-img">
-                            <img src="img/testimonial-1.jpg" alt="Image">
+                            <img src="img/testimonial-1.jpg" alt="Testimonial 1" loading="lazy" class="img-fluid">
                         </div>
                         <div class="testimonial-text">
                             <p>
@@ -500,7 +499,7 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="testimonial-img">
-                            <img src="img/testimonial-2.jpg" alt="Image">
+                            <img src="img/testimonial-2.jpg" alt="Testimonial 2" loading="lazy" class="img-fluid">
                         </div>
                         <div class="testimonial-text">
                             <p>
@@ -512,7 +511,7 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="testimonial-img">
-                            <img src="img/testimonial-3.jpg" alt="Image">
+                            <img src="img/testimonial-3.jpg" alt="Testimonial 3" loading="lazy" class="img-fluid">
                         </div>
                         <div class="testimonial-text">
                             <p>
@@ -539,7 +538,7 @@
                         <div class="team-item">
                             <div class="team-img">
                                 <a href="https://www.linkedin.com/company/100310952/admin/dashboard/" target="_blank">
-                                    <img src="CSS_JS_IMG/Image/aeeh.png" alt="AEEH Logo">
+                                    <img src="CSS_JS_IMG/Image/aeeh.png" alt="AEEH Logo" loading="lazy" class="img-fluid">
                                 </a>
                             </div>
                             <div class="team-text">
@@ -568,7 +567,7 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="CSS_JS_IMG/Image/Football Club Logo aeeh.png" alt="Image">
+                                <img src="CSS_JS_IMG/Image/Football Club Logo aeeh.png" alt="AEEH Football Club Logo" loading="lazy" class="img-fluid">
                             </div>
                             <div class="team-text">
                                 <h2>Football</h2>
@@ -588,7 +587,7 @@
                     <!--<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/marathon.jpg" alt="Image">
+                                <img src="img/marathon.jpg" alt="Marathon" loading="lazy" class="img-fluid">
                             </div>
                             <div class="team-text">
                                 <h2>Paris Marathon 2023</h2>
@@ -608,7 +607,7 @@
                     <!-- div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/paris.jpeg" alt="Image">
+                                <img src="img/paris.jpeg" alt="Paris" loading="lazy" class="img-fluid">
                             </div>
                             <div class="team-text">
                                 <h2>Paris Versailles 2022</h2>
@@ -712,7 +711,6 @@
         
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="https://ayushtankha.github.io/lib/easing/easing.min.js"></script>
         <script src="https://ayushtankha.github.io/lib/wow/wow.min.js"></script>
         <script src="https://ayushtankha.github.io/lib/waypoints/waypoints.min.js"></script>
