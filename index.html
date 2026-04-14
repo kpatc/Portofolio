@@ -1,732 +1,1731 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Welcome - Josué Kpatcha Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-        <!--Boostrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ── Primary SEO ─────────────────────────────────────── -->
+    <title>Essohanam Josué Kpatcha | Data & AI Engineer · Analytics Consulting</title>
+    <meta name="description" content="Final-year Data Engineering student at ENSA Al Hoceima, Morocco. Building ML systems, LLM agents, and real-time data pipelines. Targeting analytics consulting roles at BCG, McKinsey, Deloitte, KPMG and Capgemini.">
+    <meta name="author" content="Essohanam Josué Kpatcha">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kpatc.github.io/Portofolio/">
 
-        <!-- Google Fonts: Inter (modern) + Montserrat fallback -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ── Open Graph (Facebook / LinkedIn preview) ────────── -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://kpatc.github.io/Portofolio/">
+    <meta property="og:title"       content="Essohanam Josué Kpatcha | Data & AI Engineer">
+    <meta property="og:description" content="Building ML systems and LLM agents targeting analytics consulting at BCG, McKinsey, Deloitte, KPMG.">
+    <!-- Replace the path below with your actual OG image (1200×630 px recommended) -->
+    <meta property="og:image"       content="https://kpatc.github.io/Portofolio/CSS_JS_IMG/og-image.png">
+    <meta property="og:image:width"  content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale"      content="en_US">
 
-        <!-- CSS Libraries -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://ayushtankha.github.io/lib/animate/animate.min.css" rel="stylesheet">
-        <link href="https://ayushtankha.github.io/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="https://ayushtankha.github.io/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- ── Twitter / X Card ───────────────────────────────── -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Essohanam Josué Kpatcha | Data & AI Engineer">
+    <meta name="twitter:description" content="Building ML systems and LLM agents targeting analytics consulting at BCG, McKinsey, Deloitte, KPMG.">
+    <meta name="twitter:image"       content="https://kpatc.github.io/Portofolio/CSS_JS_IMG/og-image.png">
 
-        <!-- Template Stylesheet -->
-        <link href="CSS_JS_IMG/CSS_JS/script.css" rel="stylesheet">
-    </head>
-    <!-- Google tag (gtag.js) -->
+    <!-- ── Browser / PWA ──────────────────────────────────── -->
+    <meta name="theme-color" content="#070B14">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%230a0f1e'/><text x='16' y='21.5' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='14' fill='%233b82f6'>JK</text></svg>">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYLG6P2YM2"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZYLG6P2YM2');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZYLG6P2YM2');
     </script>
 
-    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Portfolio</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root {
+    --bg:         #070B14;
+    --bg2:        #0C1225;
+    --card:       #0D1929;
+    --border:     rgba(255,255,255,0.06);
+    --border-hi:  rgba(59,130,246,0.35);
+    --blue:       #3B82F6;
+    --blue-hi:    #60A5FA;
+    --blue-dim:   rgba(59,130,246,0.12);
+    --cyan:       #06B6D4;
+    --cyan-dim:   rgba(6,182,212,0.1);
+    --gold:       #FBBF24;
+    --gold-dim:   rgba(251,191,36,0.1);
+    --purple:     #A78BFA;
+    --purple-dim: rgba(139,92,246,0.1);
+    --orange:     #FB923C;
+    --orange-dim: rgba(249,115,22,0.1);
+    --green:      #4ADE80;
+    --green-dim:  rgba(34,197,94,0.08);
+    --text:       #F1F5F9;
+    --text2:      #94A3B8;
+    --text3:      #64748B;
+    --r:          10px;
+    --rl:         16px;
+    --sh:         0 4px 24px rgba(0,0,0,0.4);
+    --sh-lg:      0 16px 56px rgba(0,0,0,0.5);
+    --ease:       0.25s ease;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4,h5,h6{color:var(--text);line-height:1.2;font-weight:700}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto}
+
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:100px 0}
+
+.sec-label{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--blue);margin-bottom:16px;
+}
+.sec-label::before{content:'';width:20px;height:1px;background:var(--blue)}
+
+.sec-title{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
+.sec-sub{font-size:1rem;color:var(--text2);max-width:520px;line-height:1.7}
+
+/* fade-up animation — driven by IntersectionObserver */
+.fu{opacity:0;transform:translateY(32px);transition:opacity .6s ease,transform .6s ease}
+.fu.vis{opacity:1;transform:none}
+.d1{transition-delay:.1s} .d2{transition-delay:.2s} .d3{transition-delay:.3s}
+.d4{transition-delay:.4s} .d5{transition-delay:.5s} .d6{transition-delay:.6s}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 22px;font-size:.875rem;font-weight:600;
+    border-radius:var(--r);border:none;cursor:pointer;
+    transition:all .28s ease;white-space:nowrap;
+    position:relative;overflow:hidden;
+}
+.btn svg{width:15px;height:15px;flex-shrink:0}
+/* Shimmer sweep on hover (all buttons) */
+.btn::after{
+    content:'';position:absolute;top:0;left:-100%;
+    width:48%;height:100%;pointer-events:none;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);
+    transition:left .55s ease;
+}
+.btn:hover::after{left:150%}
+/* Primary */
+.btn-p{
+    background:linear-gradient(135deg,var(--blue) 0%,#2563EB 100%);
+    color:#fff;
+    box-shadow:0 1px 6px rgba(59,130,246,.2);
+}
+.btn-p:hover{
+    background:linear-gradient(135deg,var(--blue-hi) 0%,var(--blue) 100%);
+    transform:translateY(-2px);
+    box-shadow:
+        0 0 0 1px rgba(59,130,246,.45),
+        0 4px 16px rgba(59,130,246,.5),
+        0 18px 44px rgba(59,130,246,.22);
+}
+/* Outline */
+.btn-o{
+    background:transparent;color:var(--text2);
+    border:1px solid var(--border);
+}
+.btn-o:hover{
+    border-color:rgba(255,255,255,.24);color:var(--text);
+    background:rgba(255,255,255,.05);
+    transform:translateY(-2px);
+    box-shadow:0 0 0 1px rgba(255,255,255,.04),0 6px 22px rgba(0,0,0,.3);
+}
+/* Ghost */
+.btn-g{background:transparent;color:var(--blue);padding:6px 0;gap:5px}
+.btn-g:hover{color:var(--blue-hi);gap:9px}
+/* Hero-specific CTA overrides */
+/* GPU-composited idle pulse: opacity on a pseudo-element, not box-shadow */
+.hero-cta .btn-p::before{
+    content:'';position:absolute;inset:-1px;border-radius:var(--r);pointer-events:none;z-index:-1;
+    box-shadow:0 0 32px rgba(59,130,246,.5),0 2px 10px rgba(59,130,246,.35);
+    animation:btn-pulse 3.5s ease-in-out infinite;
+}
+@keyframes btn-pulse{
+    0%,100%{opacity:.45}
+    50%    {opacity:1}
+}
+.hero-cta .btn-p:hover::before{animation:none;opacity:0}
+.hero-cta .btn-p:hover{
+    box-shadow:
+        0 0 0 1px rgba(59,130,246,.55),
+        0 4px 18px rgba(59,130,246,.6),
+        0 22px 52px rgba(59,130,246,.28);
+}
+.hero-cta .btn-o{
+    border-color:rgba(255,255,255,.14);
+    color:rgba(255,255,255,.65);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+}
+.hero-cta .btn-o:hover{
+    border-color:rgba(255,255,255,.32);
+    color:var(--text);
+    background:rgba(255,255,255,.08);
+    box-shadow:0 0 0 1px rgba(255,255,255,.05),0 8px 28px rgba(0,0,0,.25);
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    padding:20px 0;
+    transition:background .35s,padding .35s,border-color .35s,box-shadow .35s;
+    border-bottom:1px solid transparent;
+    will-change:transform;
+}
+nav.stuck{
+    background:rgba(7,11,20,.92);backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);padding:13px 0;
+    border-bottom-color:var(--border);
+    box-shadow:0 4px 24px rgba(0,0,0,.35);
+}
+/* Scroll progress bar */
+#scroll-prog{
+    position:absolute;bottom:-1px;left:0;height:2px;width:0%;
+    background:linear-gradient(90deg,var(--blue),var(--cyan));
+    transition:width .1s linear;
+    border-radius:0 2px 2px 0;
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between}
+.nav-brand{
+    font-size:.95rem;font-weight:800;letter-spacing:.04em;
+    display:flex;align-items:center;gap:10px;
+}
+.nav-mark{
+    width:30px;height:30px;background:var(--blue);border-radius:7px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:.75rem;font-weight:900;color:#fff;
+}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav-links a{
+    position:relative;font-size:.83rem;font-weight:500;color:var(--text3);
+    padding:6px 11px;border-radius:6px;transition:color .2s;
+}
+.nav-links a::after{
+    content:'';position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);
+    width:0;height:2px;background:var(--blue-hi);border-radius:2px;
+    transition:width .25s ease;
+}
+.nav-links a:hover{color:var(--text)}
+.nav-links a.act{color:var(--blue-hi)}
+.nav-links a.act::after{width:60%}
+.nav-r{display:flex;align-items:center;gap:10px}
+
+/* hamburger */
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hbg span{display:block;width:22px;height:2px;background:var(--text2);border-radius:2px;transition:transform .3s ease,opacity .3s ease}
+/* Animate bars → X when menu is open */
+.hbg.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hbg.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* mobile overlay — opacity-based so it can animate */
+.mob{
+    position:fixed;inset:0;background:rgba(7,11,20,.97);backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);z-index:99;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+    opacity:0;visibility:hidden;
+    transition:opacity .3s ease,visibility .3s ease;
+}
+.mob.open{opacity:1;visibility:visible}
+.mob a{
+    font-size:1.4rem;font-weight:700;color:var(--text2);padding:11px 24px;
+    transition:color .2s,transform .2s;border-radius:var(--r);
+}
+.mob a:hover{color:var(--text);transform:translateX(4px)}
+.mob-x{
+    position:absolute;top:20px;right:24px;
+    width:38px;height:38px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.1rem;color:var(--text3);cursor:pointer;background:none;border:1px solid var(--border);
+    transition:border-color .2s,color .2s;
+}
+.mob-x:hover{border-color:rgba(255,255,255,.2);color:var(--text)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+#home{
+    position:relative;min-height:100vh;display:flex;align-items:center;
+    padding:120px 0 64px;overflow:hidden;
+    background:linear-gradient(-45deg,#070B14,#0d1933,#071120,#040912);
+    background-size:400% 400%;
+    animation:bg-shift 20s ease infinite;
+}
+@keyframes bg-shift{
+    0%  {background-position:0% 50%}
+    50% {background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* Faint grid — fades out toward center so it doesn't compete with content */
+#home::before{
+    content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+    background-image:
+        linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+    background-size:52px 52px;
+    -webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,transparent 28%,black 75%);
+    mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,transparent 28%,black 75%);
+}
+#cvs{position:absolute;inset:0;width:100%;height:100%;z-index:2}
+/* Main centre glow — breathes */
+.hero-glow{
+    position:absolute;top:8%;left:50%;transform:translateX(-50%);
+    width:1100px;height:750px;pointer-events:none;z-index:2;
+    background:radial-gradient(ellipse,rgba(59,130,246,.13) 0%,rgba(6,182,212,.04) 38%,transparent 65%);
+    animation:glow-breathe 8s ease-in-out infinite;
+}
+@keyframes glow-breathe{
+    0%,100%{opacity:.75;transform:translateX(-50%) scale(1)}
+    50%    {opacity:1;  transform:translateX(-50%) scale(1.1)}
+}
+/* Secondary cyan orb — drifts bottom-right */
+.hero-glow2{
+    position:absolute;bottom:-8%;right:-4%;
+    width:560px;height:560px;pointer-events:none;z-index:2;
+    background:radial-gradient(ellipse,rgba(6,182,212,.08) 0%,transparent 62%);
+    animation:glow-drift 11s ease-in-out infinite alternate;
+}
+@keyframes glow-drift{
+    0%  {transform:translate(0,0)}
+    100%{transform:translate(-56px,-44px)}
+}
+.hero-in{
+    position:relative;z-index:3;text-align:center;
+    max-width:860px;margin:0 auto;
+}
+.hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:5px 16px;border:1px solid rgba(59,130,246,.22);
+    background:rgba(59,130,246,.07);border-radius:9999px;
+    font-size:.76rem;font-weight:600;color:var(--blue-hi);
+    letter-spacing:.03em;margin-bottom:36px;
+}
+.badge-dot{
+    width:7px;height:7px;border-radius:50%;background:#22C55E;
+    animation:pulse-g 2s ease-in-out infinite;
+}
+@keyframes pulse-g{
+    0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.4)}
+    50%{box-shadow:0 0 0 5px rgba(34,197,94,0)}
+}
+.hero-h{
+    font-size:clamp(2.3rem,5.5vw,4.2rem);font-weight:900;
+    line-height:1.1;letter-spacing:-.025em;margin-bottom:24px;
+}
+.grad{
+    background:linear-gradient(135deg,var(--blue) 0%,var(--cyan) 50%,var(--blue-hi) 100%);
+    background-size:200% 200%;
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+    animation:grad-flow 5s ease infinite;
+}
+@keyframes grad-flow{
+    0%  {background-position:0% 50%}
+    50% {background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.hero-sub{font-size:clamp(.95rem,2vw,1.1rem);color:var(--text2);margin-bottom:16px;line-height:1.75}
+.firms{
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    flex-wrap:wrap;margin-bottom:40px;
+}
+.firm{
+    padding:3px 11px;border:1px solid var(--border);border-radius:9999px;
+    font-size:.72rem;font-weight:600;color:var(--text3);
+}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:52px}
+.hero-soc{display:flex;align-items:center;justify-content:center;gap:10px}
+.hero-soc a{
+    width:40px;height:40px;border-radius:50%;border:1px solid var(--border);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--text3);transition:all .2s;
+}
+.hero-soc a:hover{border-color:var(--blue);color:var(--blue-hi);background:var(--blue-dim)}
+.hero-soc svg{width:17px;height:17px;fill:currentColor}
+.scroll-ind{
+    position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
+    color:var(--text3);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    display:flex;flex-direction:column;align-items:center;gap:8px;
+    animation:bob 2.5s ease-in-out infinite;
+}
+.scroll-ind::after{content:'';width:1px;height:36px;background:linear-gradient(to bottom,var(--text3),transparent)}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(7px)}}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+#about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.about-text p{font-size:1.025rem;color:var(--text2);line-height:1.85;margin-bottom:20px}
+.about-text p:last-child{margin-bottom:0}
+.about-text strong{color:var(--text);font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:52px}
+.about-photo-wrap{display:flex;justify-content:flex-end}
+.about-photo{
+    width:100%;max-width:340px;
+    aspect-ratio:3/4;
+    object-fit:cover;object-position:top center;
+    border-radius:var(--rl);
+    border:2px solid rgba(59,130,246,.25);
+    box-shadow:0 0 0 1px rgba(59,130,246,.06),0 0 36px rgba(59,130,246,.14),0 24px 52px rgba(0,0,0,.4);
+}
+.about-exp-hdr{margin-top:52px;margin-bottom:16px}
+.stat{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--rl);
+    padding:22px;transition:border-color var(--ease),transform var(--ease);
+}
+.stat:hover{border-color:var(--border-hi);transform:translateY(-2px)}
+.stat-n{font-size:2.1rem;font-weight:900;color:var(--blue-hi);display:block;line-height:1;margin-bottom:6px}
+.stat-l{font-size:.76rem;color:var(--text3);line-height:1.45}
+
+/* ============================================================
+   CASE STUDIES
+   ============================================================ */
+#cases{background:var(--bg)}
+.cases-hdr{
+    display:flex;align-items:flex-end;justify-content:space-between;
+    margin-bottom:44px;gap:24px;flex-wrap:wrap;
+}
+/* ── Featured card ──────────────────────────────────────── */
+.feat{
+    position:relative;
+    background:linear-gradient(140deg,#0f2040 0%,#0d1929 55%,#0a1520 100%);
+    border:1px solid rgba(59,130,246,.28);border-radius:var(--rl);
+    padding:44px;margin-bottom:24px;overflow:hidden;
+    transition:border-color .35s,transform .35s;
+    box-shadow:0 0 0 1px rgba(59,130,246,.06),0 12px 44px rgba(0,0,0,.45);
+}
+/* GPU-composited glow pulse: animate opacity on a pseudo-element, not box-shadow */
+.feat::after{
+    content:'';position:absolute;inset:-1px;border-radius:var(--rl);pointer-events:none;
+    box-shadow:0 0 52px rgba(59,130,246,.18),0 0 0 1px rgba(59,130,246,.12);
+    opacity:.3;animation:feat-breathe 5s ease-in-out infinite;
+}
+@keyframes feat-breathe{
+    0%,100%{opacity:.3}
+    50%    {opacity:1}
+}
+/* Decorative corner orb */
+.feat::before{
+    content:'';position:absolute;top:-80px;right:-80px;pointer-events:none;
+    width:300px;height:300px;
+    background:radial-gradient(circle,rgba(59,130,246,.16) 0%,transparent 62%);
+}
+.feat:hover{
+    border-color:rgba(59,130,246,.6);transform:translateY(-4px);
+    box-shadow:0 0 0 1px rgba(59,130,246,.22),0 0 56px rgba(59,130,246,.24),0 0 110px rgba(59,130,246,.08),0 28px 72px rgba(0,0,0,.55);
+}
+.feat:hover::after{animation:none;opacity:0}
+.feat-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.feat-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    padding:4px 12px;border-radius:9999px;font-size:.68rem;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;
+    color:var(--gold);background:var(--gold-dim);border:1px solid rgba(251,191,36,.22);
+}
+.feat-grid{display:grid;grid-template-columns:1fr 2fr;gap:48px;align-items:start}
+.feat-meta{display:flex;flex-direction:column}
+.feat-meta h3{font-size:1.45rem;font-weight:800;line-height:1.3;color:var(--text);margin-bottom:12px}
+.feat-meta p{font-size:.85rem;color:var(--text3);line-height:1.65;margin-bottom:24px}
+/* GitHub button (featured) */
+.btn-gh{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:10px 20px;font-size:.82rem;font-weight:600;
+    color:var(--text2);background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);border-radius:var(--r);
+    transition:all .22s;align-self:flex-start;
+}
+.btn-gh:hover{
+    border-color:rgba(255,255,255,.25);color:var(--text);
+    background:rgba(255,255,255,.1);transform:translateY(-1px);
+    box-shadow:0 4px 16px rgba(0,0,0,.3);
+}
+.btn-gh svg{flex-shrink:0}
+/* PIA three-panel block */
+.pia{
+    display:grid;grid-template-columns:repeat(3,1fr);
+    border:1px solid rgba(255,255,255,.07);border-radius:var(--r);overflow:hidden;
+}
+.pia-b{padding:22px 20px;background:rgba(0,0,0,.15)}
+.pia-b+.pia-b{border-left:1px solid rgba(255,255,255,.07)}
+.pia-prob{border-top:2px solid rgba(239,68,68,.5)}
+.pia-appr{border-top:2px solid rgba(59,130,246,.5)}
+.pia-impa{border-top:2px solid rgba(34,197,94,.5)}
+.pia-b h5{
+    display:flex;align-items:center;gap:7px;margin-bottom:10px;
+    font-size:.62rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+}
+.pia-prob h5{color:rgba(252,129,129,.95)}
+.pia-appr h5{color:var(--blue-hi)}
+.pia-impa h5{color:var(--green)}
+.pia-b h5 svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.8;flex-shrink:0}
+.pia-b p{font-size:.845rem;color:var(--text2);line-height:1.72}
+.pia-b p strong{color:var(--text);font-weight:600}
+
+/* ── Tag chips ───────────────────────────────────────────── */
+.tag{display:inline-flex;align-items:center;padding:3px 10px;border-radius:9999px;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border:1px solid}
+.t-bl{color:var(--blue-hi);background:var(--blue-dim);border-color:rgba(59,130,246,.2)}
+.t-cy{color:var(--cyan);background:var(--cyan-dim);border-color:rgba(6,182,212,.2)}
+.t-pu{color:var(--purple);background:var(--purple-dim);border-color:rgba(139,92,246,.2)}
+.t-or{color:var(--orange);background:var(--orange-dim);border-color:rgba(249,115,22,.2)}
+.t-gn{color:var(--green);background:var(--green-dim);border-color:rgba(34,197,94,.2)}
+.t-go{color:var(--gold);background:var(--gold-dim);border-color:rgba(251,191,36,.2)}
+
+/* ── Case cards ─────────────────────────────────────────── */
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ccard{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--rl);
+    display:flex;flex-direction:column;overflow:hidden;
+    transition:border-color .3s,box-shadow .3s,transform .3s;
+}
+/* Color-matched hover glow per card accent */
+.ccard-pu:hover{border-color:rgba(139,92,246,.48);transform:translateY(-4px);box-shadow:0 0 0 1px rgba(139,92,246,.08),0 0 40px rgba(139,92,246,.15),0 22px 56px rgba(0,0,0,.5)}
+.ccard-or:hover{border-color:rgba(249,115,22,.48); transform:translateY(-4px);box-shadow:0 0 0 1px rgba(249,115,22,.08), 0 0 40px rgba(249,115,22,.15), 0 22px 56px rgba(0,0,0,.5)}
+.ccard-gn:hover{border-color:rgba(34,197,94,.48);  transform:translateY(-4px);box-shadow:0 0 0 1px rgba(34,197,94,.08),  0 0 40px rgba(34,197,94,.15),  0 22px 56px rgba(0,0,0,.5)}
+.ccard-cy:hover{border-color:rgba(6,182,212,.48);  transform:translateY(-4px);box-shadow:0 0 0 1px rgba(6,182,212,.08),  0 0 40px rgba(6,182,212,.15),  0 22px 56px rgba(0,0,0,.5)}
+.ccard-bl:hover{border-color:rgba(59,130,246,.48); transform:translateY(-4px);box-shadow:0 0 0 1px rgba(59,130,246,.08), 0 0 40px rgba(59,130,246,.15), 0 22px 56px rgba(0,0,0,.5)}
+/* Card head: tag + title */
+.ccard-head{padding:20px 22px 16px;display:flex;flex-direction:column;gap:11px}
+.ccard-head h3{font-size:.975rem;font-weight:700;line-height:1.42;color:var(--text)}
+/* Stacked PIA sections */
+.ccard-sections{display:flex;flex-direction:column;flex:1}
+.csec{padding:12px 22px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:6px}
+.csec-label{
+    display:flex;align-items:center;gap:6px;
+    font-size:.62rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+}
+.csec-label svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:1.8;flex-shrink:0}
+.csec-prob .csec-label{color:rgba(252,129,129,.9)}
+.csec-appr .csec-label{color:var(--blue-hi)}
+.csec-impa .csec-label{color:var(--green)}
+.csec p{font-size:.82rem;color:var(--text2);line-height:1.68}
+.csec p strong{color:var(--text);font-weight:600}
+/* Footer: tech tags + GitHub link */
+.ccard-foot{
+    padding:12px 22px;border-top:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    background:rgba(0,0,0,.18);flex-shrink:0;
+}
+.ccard-foot .tag{font-size:.6rem}
+.btn-gh-sm{
+    display:inline-flex;align-items:center;gap:5px;
+    padding:5px 11px;font-size:.74rem;font-weight:600;
+    color:var(--text3);background:transparent;
+    border:1px solid var(--border);border-radius:6px;transition:all .2s;flex-shrink:0;
+}
+.btn-gh-sm:hover{border-color:rgba(255,255,255,.2);color:var(--text);background:rgba(255,255,255,.05)}
+.btn-gh-sm svg{width:12px;height:12px;fill:currentColor}
+
+/* ============================================================
+   SKILLS
+   ============================================================ */
+#skills{background:var(--bg2)}
+.skills-wrap{display:flex;flex-direction:column;gap:36px;margin-top:52px}
+.sg-lbl{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.sg-icon{
+    width:30px;height:30px;border-radius:7px;
+    display:flex;align-items:center;justify-content:center;font-size:.85rem;
+}
+.sg-name{font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text3)}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{
+    padding:5px 13px;border-radius:9999px;font-size:.8rem;font-weight:500;
+    border:1px solid;transition:transform .15s,box-shadow .15s;cursor:default;
+}
+.pill:hover{transform:translateY(-2px)}
+.pl-bl{color:var(--blue-hi);background:rgba(59,130,246,.08);border-color:rgba(59,130,246,.2)}
+.pl-bl:hover{box-shadow:0 4px 14px rgba(59,130,246,.2)}
+.pl-pu{color:var(--purple);background:var(--purple-dim);border-color:rgba(139,92,246,.2)}
+.pl-pu:hover{box-shadow:0 4px 14px rgba(139,92,246,.2)}
+.pl-or{color:var(--orange);background:var(--orange-dim);border-color:rgba(249,115,22,.2)}
+.pl-or:hover{box-shadow:0 4px 14px rgba(249,115,22,.2)}
+.pl-cy{color:var(--cyan);background:var(--cyan-dim);border-color:rgba(6,182,212,.2)}
+.pl-cy:hover{box-shadow:0 4px 14px rgba(6,182,212,.2)}
+.pl-gn{color:var(--green);background:var(--green-dim);border-color:rgba(34,197,94,.2)}
+.pl-gn:hover{box-shadow:0 4px 14px rgba(34,197,94,.2)}
+
+/* ============================================================
+   CERTIFICATIONS
+   ============================================================ */
+#certs{background:var(--bg)}
+.certs-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));
+    gap:14px;margin-top:44px;
+}
+.cert{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+    padding:18px 20px;display:flex;align-items:center;gap:14px;
+    transition:border-color var(--ease),transform var(--ease);
+}
+.cert:hover{border-color:rgba(59,130,246,.3);transform:translateY(-2px)}
+.cert-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.cert-info h4{font-size:.875rem;font-weight:600;color:var(--text);line-height:1.35;margin-bottom:3px}
+.cert-info span{font-size:.73rem;color:var(--text3)}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+#contact{background:var(--bg2);text-align:center}
+.contact-in{max-width:600px;margin:0 auto}
+.contact-h{font-size:clamp(2rem,4vw,2.75rem);font-weight:900;letter-spacing:-.02em;margin-bottom:16px}
+.contact-sub{color:var(--text2);font-size:1rem;line-height:1.75;margin-bottom:36px}
+.contact-email{
+    display:inline-block;font-size:1.2rem;font-weight:700;color:var(--blue-hi);
+    border-bottom:2px solid rgba(59,130,246,.3);padding-bottom:2px;margin-bottom:10px;
+    transition:color .2s,border-color .2s;
+}
+.contact-email:hover{color:var(--cyan);border-color:var(--cyan)}
+.contact-phone{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.975rem;font-weight:500;color:var(--text3);
+    margin-bottom:32px;transition:color .2s;
+}
+.contact-phone:hover{color:var(--text2)}
+.contact-phone svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.contact-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* ============================================================
+   CV DROPDOWN
+   ============================================================ */
+.cv-drop{position:relative;display:inline-flex}
+.cv-drop-chevron{
+    width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;
+    stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;
+    transition:transform .25s ease;
+}
+.cv-drop.open .cv-drop-chevron{transform:rotate(180deg)}
+.cv-drop-menu{
+    position:absolute;top:calc(100% + 8px);right:0;
+    background:rgba(10,18,32,.98);border:1px solid var(--border);
+    border-radius:var(--r);padding:5px;min-width:186px;
+    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    box-shadow:0 8px 32px rgba(0,0,0,.55);
+    opacity:0;visibility:hidden;transform:translateY(-6px);
+    transition:opacity .2s ease,transform .2s ease,visibility .2s ease;
+    z-index:200;
+}
+.cv-drop.open .cv-drop-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.cv-drop-item{
+    display:flex;align-items:center;gap:10px;
+    padding:9px 13px;border-radius:6px;
+    font-size:.82rem;font-weight:500;color:var(--text2);white-space:nowrap;
+    transition:background .15s,color .15s;
+}
+.cv-drop-item:hover{background:rgba(59,130,246,.1);color:var(--text)}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
+.foot-in{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot-copy{font-size:.78rem;color:var(--text3)}
+.foot-links{display:flex;gap:18px}
+.foot-links a{font-size:.78rem;color:var(--text3);transition:color .2s}
+.foot-links a:hover{color:var(--text2)}
+
+/* ============================================================
+   BACK TO TOP
+   ============================================================ */
+.btt{
+    position:fixed;bottom:26px;right:26px;width:44px;height:44px;
+    background:rgba(13,25,41,.85);border:1px solid var(--border);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--text2);
+    opacity:0;transform:translateY(14px);pointer-events:none;
+    transition:opacity .35s ease,transform .35s ease,border-color .2s,color .2s,box-shadow .2s;
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    z-index:50;will-change:transform,opacity;
+}
+.btt.show{
+    opacity:1;transform:translateY(0);pointer-events:all;
+}
+.btt:hover{
+    border-color:rgba(59,130,246,.55);color:var(--blue-hi);
+    transform:translateY(-3px);
+    box-shadow:0 0 0 1px rgba(59,130,246,.08),0 0 20px rgba(59,130,246,.2),0 8px 24px rgba(0,0,0,.4);
+}
+.btt svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2.2}
+
+/* ============================================================
+   HERO — availability line
+   ============================================================ */
+.hero-avail{
+    font-size:.875rem;color:var(--text3);letter-spacing:.03em;margin-bottom:40px;
+}
+
+/* ============================================================
+   EXPERIENCE (inline inside About)
+   ============================================================ */
+.about-exp{
+    display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;
+}
+.exp-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--rl);
+    padding:28px 32px;
+    transition:border-color var(--ease),box-shadow var(--ease),transform var(--ease);
+}
+.exp-card:hover{border-color:var(--border-hi);transform:translateY(-2px);box-shadow:var(--sh)}
+.exp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.exp-role{font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:4px}
+.exp-company{font-size:.85rem;font-weight:600;color:var(--blue-hi)}
+.exp-period{font-size:.75rem;color:var(--text3);text-align:right;flex-shrink:0;line-height:1.65}
+.exp-desc{font-size:.88rem;color:var(--text2);line-height:1.82;margin-bottom:16px}
+.exp-tags{display:flex;flex-wrap:wrap;gap:7px}
+
+/* ============================================================
+   EDUCATION
+   ============================================================ */
+#education{background:var(--bg)}
+.edu-grid{display:flex;flex-direction:column;gap:14px;margin-top:48px}
+.edu-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+    padding:22px 24px;display:flex;align-items:flex-start;gap:18px;
+    transition:border-color var(--ease),transform var(--ease);
+}
+.edu-card:hover{border-color:rgba(59,130,246,.3);transform:translateY(-2px)}
+.edu-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.edu-body{flex:1}
+.edu-body h3{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.4}
+.edu-body p{font-size:.83rem;color:var(--text2);margin-bottom:10px}
+.edu-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.edu-meta > span{font-size:.73rem;color:var(--text3)}
+.edu-logo{
+    width:40px;height:40px;border-radius:8px;
+    object-fit:contain;flex-shrink:0;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.06);
+    padding:3px;
+}
+
+/* ============================================================
+   TECHNICAL PROJECTS
+   ============================================================ */
+#projects{background:var(--bg2)}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.proj-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+    padding:20px;display:flex;flex-direction:column;gap:12px;
+    transition:border-color var(--ease),transform var(--ease);
+}
+.proj-card:hover{border-color:var(--border-hi);transform:translateY(-2px)}
+.proj-title{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.4}
+.proj-desc{font-size:.8rem;color:var(--text2);line-height:1.72;flex:1}
+.proj-foot{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    flex-wrap:wrap;padding-top:10px;border-top:1px solid var(--border);margin-top:auto;
+}
+.proj-tags{display:flex;flex-wrap:wrap;gap:5px}
+.proj-tags .tag{font-size:.6rem}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width:1024px){
+    .feat-grid{grid-template-columns:1fr}
+    .pia{grid-template-columns:1fr 1fr}
+    .cases-grid{grid-template-columns:repeat(2,1fr)}
+    .about-grid{grid-template-columns:1fr;gap:48px}
+    .nav-r .btn-o{display:none}
+    .nav-links a{padding:5px 7px;font-size:.78rem}
+    .proj-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+    section{padding:72px 0}
+    .nav-links{display:none}
+    .hbg{display:flex}
+    .nav-r .btn-o{display:none}
+    .cases-grid{grid-template-columns:1fr}
+    .proj-grid{grid-template-columns:1fr}
+    .pia{grid-template-columns:1fr}
+    .pia-b+.pia-b{border-left:none;border-top:1px solid rgba(255,255,255,.07)}
+    .feat{padding:26px 20px}
+    .feat-grid{gap:28px}
+    .ccard-foot{flex-direction:column;align-items:flex-start;gap:10px}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .about-photo-wrap{justify-content:center}
+    .about-photo{max-width:260px}
+    .certs-grid{grid-template-columns:1fr}
+    .cases-hdr{flex-direction:column;align-items:flex-start}
+    .about-exp{grid-template-columns:1fr}
+    .exp-top{flex-direction:column;gap:4px}
+    .exp-period{text-align:left}
+    .exp-card{padding:20px}
+}
+@media(max-width:480px){
+    .container{padding:0 16px}
+    section{padding:60px 0}
+    #home{padding:100px 0 52px}
+    .hero-cta{flex-direction:column;align-items:center}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .foot-in{flex-direction:column;align-items:flex-start;gap:10px}
+    .btt{bottom:16px;right:16px}
+}
+@media(max-width:375px){
+    .hero-h{letter-spacing:-.02em}
+    .feat{padding:18px 14px}
+    .pia-b{padding:16px 14px}
+    .csec{padding:10px 14px}
+    .ccard-head{padding:16px 14px 12px}
+    .ccard-foot{padding:10px 14px}
+    .sec-title{font-size:1.75rem}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Mobile overlay -->
+<div class="mob" id="mobNav">
+    <button class="mob-x" id="mobX" aria-label="Close">✕</button>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#cases">Case Studies</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#certs">Certifications</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<nav id="nav">
+    <div id="scroll-prog" aria-hidden="true"></div>
+    <div class="container">
+        <div class="nav-wrap">
+            <a href="#home" class="nav-brand">
+                <div class="nav-mark">JK</div>
+                Essohanam Josué KPATCHA
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certs">Certs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-r">
+                <div class="cv-drop">
+                    <button type="button" class="btn btn-o cv-drop-btn" style="padding:8px 16px;font-size:.8rem;">
+                        Download CV
+                        <svg class="cv-drop-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="cv-drop-menu">
+                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV — English</a>
+                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV — Français</a>
+                    </div>
+                </div>
+                <button class="hbg" id="hbg" aria-label="Menu">
+                    <span></span><span></span><span></span>
                 </button>
+            </div>
+        </div>
+    </div>
+</nav>
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Education</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#price" class="nav-item nav-link">Certifications</a-->
-                        <!--a href="#review" class="nav-item nav-link">Review</a-->
-                        <a href="#team" class="nav-item nav-link">Community Involvement & Hobbies</a>
-                        <a href="#isfooter" class="nav-item nav-link">Contact</a>
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<section id="home">
+    <canvas id="cvs"></canvas>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="container">
+        <div class="hero-in">
+            <div class="hero-badge fu">
+                <span class="badge-dot"></span>
+                Open to Consulting Internships &amp; Full-Time Roles
+            </div>
+            <h1 class="hero-h fu d1">
+                Turning messy data into<br>
+                <span class="grad">decisions that move</span><br>
+                businesses forward
+            </h1>
+            <p class="hero-sub fu d2">
+                Data &amp; AI Engineering student at ENSA Al Hoceima &nbsp;·&nbsp; Analytics Consulting track
+            </p>
+            <p class="hero-avail fu d2">Open to Analytics &amp; AI Consulting roles &nbsp;·&nbsp; Available 2026</p>
+            <div class="hero-cta fu d3">
+                <a href="#cases" class="btn btn-p">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    View Case Studies
+                </a>
+                <div class="cv-drop">
+                    <button type="button" class="btn btn-o cv-drop-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        Download CV
+                        <svg class="cv-drop-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="cv-drop-menu">
+                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV — English</a>
+                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV — Français</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Nav Bar End -->
-
-
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Essohanam Josué KPATCHA</h1>
-                                <h2></h2>
-                                <div class="typed-text">Data Engineer, Machine Learning Engineer, Data Scientist</div>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn" href="#isfooter">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src="CSS_JS_IMG/Image/img.jpeg" alt="Hero portrait" class="img-fluid" loading="lazy">
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-soc fu d4">
+                <a href="https://github.com/kpatc" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/josuekpatcha/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:josuekpatcha1@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
             </div>
         </div>
-        <!-- Hero End -->
+    </div>
+    <div class="scroll-ind" aria-hidden="true">Scroll</div>
+</section>
 
+<!-- ── ABOUT ─────────────────────────────────────────────── -->
+<section id="about">
+    <div class="container">
 
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="CSS_JS_IMG/Image/11.JPG" alt="Profile image" class="img-fluid" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <p>Learn About Me</p>
-                                <h2>About Me</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    As a data engineering student with strong expertise in machine learning, I turn complex datasets into actionable insights. I design scalable data models, implement cutting-edge algorithms, and build systems that empower businesses to make data-driven decisions. My blend of technical proficiency and analytical skills ensures efficient data pipelines and impactful results, driving innovation and strategic success.
-                                </p>
-                            </div>
-                            <div class="skills">
-                                <div class="skill-name">
-                                    <p>SQL</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Python</p><p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Java</p><p>80%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p></p>R<p>70%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <a class="btn" href="CSS_JS_IMG/cv.pdf">Learn More</a>
-                        </div>
-                    </div>
+        <!-- ── Text · Photo ───────────────────────────────── -->
+        <div class="about-grid">
+            <div>
+                <span class="sec-label fu">About</span>
+                <h2 class="sec-title fu d1">Engineer who thinks<br>like a consultant</h2>
+                <div class="about-text fu d2">
+                    <p>I'm a final-year Data Engineering student at <strong>ENSA Al Hoceima (Morocco)</strong>, obsessed with one question: what does this data actually tell us — and what should the business do about it?</p>
+                    <p>Four years translating data into decisions: churn diagnostics for energy utilities, financial health scoring for 9,600 African SMEs, national connectivity demand modeling for Togo. Behind every insight — production pipelines on <strong>Azure Databricks</strong>, cloud-native platforms, and executive dashboards built to communicate, not just visualize. Two internships in applied AI confirmed that the hardest part is never the model — it's framing the right problem.</p>
+                    <p>What makes me different: I bring engineering precision to consulting questions. I don't just build the analysis — <strong>I deliver the recommendation.</strong></p>
                 </div>
             </div>
-        </div>
-        <!-- About End -->
-        
-        <!-- Service Start -->
-        <div class="service" id="service">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My journey in knowledge</p>
-                    <h2>Education</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <a href="https://www.ensah.ma" target="_blank">
-                                    <img src="CSS_JS_IMG/Image/ensah.png" alt="ENSAH Logo" style="width: 100px; height: 100px;" class="img-fluid" loading="lazy">
-                                </a>
-                                
-                                <!-- i class="fa fa-laptop"></i-->
-                            </div>
-                            <div class="service-text">
-                                <h3>UAE-ENSA Al Hoceima (2023 - 2026)</h3>
-                                <h6>Ms Data Engineering </h6>
-                                <h6>(Al Hoceima, Morocco) </h6>
-                                <p>
-                                    
-                                    
-                                    
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Web Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div-->
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <a href="https://www.ensaf.ac.ma" target="_blank">
-                                    <img src="CSS_JS_IMG/Image/ensaf.png" alt="ENSA Fès Logo" style="width: 100px; height: 100px;" class="img-fluid" loading="lazy">
-                                </a>
-                                
-                                
-
-                                <!--i class="fab fa-android"></i-->
-                            </div>
-                            <div class="service-text">
-                                <h3>USMBA-ENSA Fès (2021 - 2023)</h3>
-                                <h6>BAC+2 Sciences of Engineering  </h6>
-                                <h6>(Fès, Morocco) </h6>
-                            </div>
-                        </div>
-                    </div>
-                    <!--div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-apple"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Apps Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div -->
-                    </div>
-                </div>
+            <div class="about-photo-wrap fu d2">
+                <img src="CSS_JS_IMG/Image/profil.png"
+                     alt="Essohanam Josué KPATCHA — Data &amp; AI Engineer"
+                     class="about-photo">
             </div>
         </div>
-        <!-- Service End -->
-        
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <!-- p>My Resume</p-->
-                    <h2>Work Experience (&lt 1 Years)</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Jul 2024 - Sept 2024 (2 months) </div>
-                            <h2>3D SMART FACTORY</h2> 
-                            <h4>3D Deep Learning/Machine Learning Internship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(Hybrid, Morocco)</strong></h4>
-                            <p>
-                                •	<b>Development of Advanced 3D Segmentation Models</b> Designed and implemented two advanced 3D segmentation models, <b>3DUnet</b> and <b>3DUnetKAN</b>, leveraging <b>deep learning techniques</b> and <b> MRI brain scans processing</b> to accurately segment brain tissues using MRI data.
-                            </p>
-                            <p>   
-                                •	<b>Integration of Kolmogorov-Arnold Networks (KAN) and U-Net Architecture</b>  enhanced the model performance by integrating <b>Kolmogorov-Arnold Networks (KAN)</b> with the <b>U-Net</b> architecture. This included applying techniques such as convolutional layers, batch normalization, and dropout regularization, improving the precision of brain tissue segmentation..
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Fev 2024 - March 2024 (4 weeks)</div>
-                            <h2>CODSOFT</h2>
-                            <h4>Data Science Internship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(Remote)</strong></h4>
-                            <p>
-                                •	Engineered a credit card fraud detection model during . Preprocessed data, conducted exploratory analysis, and balanced the dataset. Implemented and compared <b>Logistic Regression</b> and <b>LinearSVC</b> algorithms, evaluating performance using <b>precision, recall, and F1-score</b> metrics. Achieved high accuracy in fraud detection, showcasing proficiency in machine learning and real-world financial problem-solving..</p>
-                           <p>  •	Spearheaded an in-depth analysis of Indian cinema data, employing advanced Python techniques for data cleaning, exploratory analysis, and machine learning. Engineered a <b>Random Forest</b> model achieving <b>94% accuracy</b> in predicting movie ratings, while uncovering critical insights on viewer preferences and industry trends to inform strategic decisions..</b>    
-                                                            </p>
-                        </div>
-                    </div>
 
-                </div>
+        <!-- ── Metrics row ────────────────────────────────── -->
+        <div class="stats fu d3">
+            <div class="stat">
+                <span class="stat-n">4</span>
+                <span class="stat-l">Consulting-grade case studies delivered end-to-end</span>
+            </div>
+            <div class="stat">
+                <span class="stat-n">0.86</span>
+                <span class="stat-l">ROC-AUC — Zindi Africa Togo Internet Uptake Prediction</span>
+            </div>
+            <div class="stat">
+                <span class="stat-n">0.96</span>
+                <span class="stat-l">Precision — BCG X PowerCo Churn Analysis (XGBoost)</span>
+            </div>
+            <div class="stat">
+                <span class="stat-n">0.82</span>
+                <span class="stat-l">Weighted F1 — African SME Financial Health Prediction</span>
             </div>
         </div>
-        <!-- Job Experience End -->
-        
-        
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="section-header text-center">
-                    <!--p>Reasonable Price</p -->
-                    <h2>Let's <span>LAUNCH </span>Into </h2>
-                </div>
-                <!-- div class="container banner-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
-                    </p>
-                    <a class="btn">Pricing Plan</a>
-                </div -->
-            </div>
+
+        <!-- ── Experience ─────────────────────────────────── -->
+        <div class="about-exp-hdr fu d4">
+            <span class="sec-label">Experience</span>
         </div>
-        <!-- Banner End -->
+        <div class="about-exp">
 
-
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>Projects</h2>
-                    <h4>some of the projects I have worked on</h4>
+            <div class="exp-card fu d5">
+                <div class="exp-top">
+                    <div>
+                        <div class="exp-role">AI &amp; Data Engineering Intern</div>
+                        <div class="exp-company">ISICOD</div>
+                    </div>
+                    <div class="exp-period">Jun 2025 – Sep 2025 &nbsp;·&nbsp; 4 months<br>Rabat, Morocco</div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Internship</li>
-                            <li data-filter=".filter-2">Python</li>
-                            <li data-filter=".filter-3">Data Engineering</li>
-                            <li data-filter=".filter-4">Data Science</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/wheater.png" alt="Weather App" class="img-fluid" loading="lazy">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Weather App</h3>
-                                <a class="btn" href="https://github.com/ELhadratiOth/WeatherApp" target="_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/3dirm.png" alt="3D Brain Segmentation" class="img-fluid" loading="lazy">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>3D Brain Tissue segmentation using Kolmogorov-Arnold Network (KAN)</h3>
-                                <a class="btn" href="https://github.com/kpatc/3D-SMART-FACTORY-PFA-2024" target="_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/tweet.png" alt="Tweets Classification" class="img-fluid" loading="lazy">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Tweets Classification (Oracle Test)</h3>
-                                <a class="btn" href="https://github.com/kpatc/MLTasks-Competitions/blob/main/Oracle_Test.ipynb" target="_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/togofiber.png" alt="Togo Fiber" class="img-fluid" loading="lazy">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Togo Fiber Optics Uptake Prediction Challenge</h3>
-                                <a class="btn" href="https://github.com/kpatc/MLTasks-Competitions/blob/main/togo_competition_fiber.ipynb" target="_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="CSS_JS_IMG/Image/softcartRelationships.png" alt="Data Engineering Capstone" class="img-fluid" loading="lazy">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Data-Engineering-Capstone-Project</h3>
-                                <a class="btn" href="https://github.com/kpatc/Data-Engineering-Capstone-Project/" target="_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+                <p class="exp-desc">Co-built an end-to-end biometric AI platform for fingerprint classification &amp; ridge counting across 12 classes. Sole implementer of the Human-in-the-Loop retraining system enabling continuous model improvement in production.</p>
+                <div class="exp-tags">
+                    <span class="tag t-cy">PyTorch</span>
+                    <span class="tag t-cy">FastAPI</span>
+                    <span class="tag t-cy">React</span>
+                    <span class="tag t-cy">Computer Vision</span>
                 </div>
             </div>
-        </div>
-        <!-- Certifications start -->
-        <div class="price" id="price">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Learning</p>
-                    <h4>Few of my important certifications</h4>
+
+            <div class="exp-card fu d6">
+                <div class="exp-top">
+                    <div>
+                        <div class="exp-role">Machine Learning Engineer Intern</div>
+                        <div class="exp-company">3D Smart Factory</div>
+                    </div>
+                    <div class="exp-period">Jun 2024 – Aug 2024 &nbsp;·&nbsp; 2 months<br>Mohammedia, Morocco</div>
                 </div>
-            
-            <!-- Certificat 1 -->
-            <div id="certification1" class="certification filter-3" data-wow-delay="0.2s">
-                <h4 class="mb-4">
-                    <a href="https://www.coursera.org/professional-certificates/ibm-data-engineer" target="_blank" class="title-link">
-                        IBM Data Engineering Professional Certificate
+                <p class="exp-desc">Applied research on 3D medical image segmentation. Implemented custom KAN layers integrated into a 3D U-Net — achieving +3% segmentation accuracy gain over the standard baseline on MRI datasets.</p>
+                <div class="exp-tags">
+                    <span class="tag t-pu">PyTorch</span>
+                    <span class="tag t-pu">TensorFlow</span>
+                    <span class="tag t-pu">3D Deep Learning</span>
+                    <span class="tag t-pu">Medical AI</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── CASE STUDIES ──────────────────────────────────────── -->
+<section id="cases">
+    <div class="container">
+        <div class="cases-hdr">
+            <div>
+                <span class="sec-label fu">Case Studies</span>
+                <h2 class="sec-title fu d1">Work that speaks<br>in business outcomes</h2>
+            </div>
+            <p class="sec-sub fu d2" style="text-align:right;max-width:340px;">Each project structured as a consulting engagement: problem framed, approach rigorous, impact quantified.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- FEATURED CASE STUDY                           -->
+        <!-- ═══════════════════════════════════════════════ -->
+        <div class="feat fu">
+            <div class="feat-top">
+                <span class="feat-badge">★ Featured Case Study</span>
+                <span class="tag t-bl">BCG X Analytics Simulation</span>
+            </div>
+            <div class="feat-grid">
+                <!-- Left: title + context + CTA -->
+                <div class="feat-meta">
+                    <h3>Why PowerCo's Customers Churn — and What To Do About It</h3>
+                    <p>Energy utility · 14,600 customers · 193,000 pricing records · One bold hypothesis reframed.</p>
+                    <a href="https://github.com/kpatc/PowerCo-Churn-Prediction-BCG" target="_blank" rel="noopener" class="btn-gh">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        View on GitHub
+                        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 2H2v8h8V7.5M7 1h4v4M10 1L5.5 5.5"/></svg>
                     </a>
-                </h4>
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-3 mb-3 mb-md-0 ">
-                        <img src="CSS_JS_IMG/Image/etl.jpg" alt="etl" class="certificate-image img-fluid">
+                </div>
+                <!-- Right: Problem / Approach / Impact panels -->
+                <div class="pia">
+                    <div class="pia-b pia-prob">
+                        <h5>
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </h5>
+                        <p>PowerCo (energy utility) believed <strong>price sensitivity</strong> was the primary churn driver. BCG was asked to investigate and recommend a targeted retention strategy.</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp">
-                        <h6 class="mb-1">Course | IBM</h6>
-                        <h5 class="mb-2">ETL and Data Pipelines with Shell, Airflow and Kafka</h5>
-                        <span class="badge badge-completed">Completed</span>
+                    <div class="pia-b pia-appr">
+                        <h5>
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </h5>
+                        <p>Reframed the hypothesis. Analyzed 14,600 customers + 193,000 pricing records. <strong>Engineered 50+ features.</strong> Benchmarked Random Forest, Gradient Boosting, XGBoost with rigorous CV.</p>
                     </div>
-                    <div class="col-md-3 text-md-end mt-3 mt-md-0">
-                        <a href="https://www.coursera.org/account/accomplishments/verify/AWMB95NPEAHD" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
+                    <div class="pia-b pia-impa">
+                        <h5>
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </h5>
+                        <p>Price is <strong>NOT the main driver</strong> — margin and customer segment are. Prioritize retention on low-margin, high-churn segments. <strong>XGBoost: ROC-AUC = 0.68, Precision = 0.96.</strong></p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Certificat 2 -->
-            <div id="certification2" class="certification filter-3" data-wow-delay="0.4s">
-                <h4 class="mb-4">
-                    <a href="https://www.coursera.org/professional-certificates/ibm-data-engineer" target="_blank" class="title-link">
-                        IBM Data Engineering Professional Certificate
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- CASE CARD GRID (5 cards)                      -->
+        <!-- ═══════════════════════════════════════════════ -->
+        <div class="cases-grid">
+
+            <!-- Case 2 — BCG GenAI / Purple -->
+            <div class="ccard ccard-pu fu d1">
+                <div class="ccard-head">
+                    <span class="tag t-pu">BCG GenAI Consulting Simulation</span>
+                    <h3>AI Financial Analyst for Global Finance Corp.</h3>
+                </div>
+                <div class="ccard-sections">
+                    <div class="csec csec-prob">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </span>
+                        <p>GFC needed to analyze hundreds of 10-K filings faster and extract strategic insights <strong>without manual reading</strong>.</p>
+                    </div>
+                    <div class="csec csec-appr">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </span>
+                        <p>Built a <strong>hybrid RAG engine</strong> (ChromaDB + SQLite). Extracted 2,000+ records from 34 companies × 3 years via SEC EDGAR. Engineered 20+ industry-benchmarked KPIs.</p>
+                    </div>
+                    <div class="csec csec-impa">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </span>
+                        <p>Production-ready system answering complex financial questions <strong>in seconds</strong>. Integrated <strong>Langfuse</strong> for hallucination eval + <strong>LiteLLM</strong> for failover.</p>
+                    </div>
+                </div>
+                <div class="ccard-foot">
+                    <span class="tag t-cy">RAG · LLM · Finance</span>
+                    <a href="https://github.com/kpatc/Ai-Financial-Analyzer" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
                     </a>
-                </h4>
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-3 mb-3 mb-md-0">
-                        <img src="CSS_JS_IMG/Image/pythonpro.jpg" alt="SQL Project" class="certificate-image img-fluid">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp">
-                        <h6 class="mb-1">Course | IBM</h6>
-                        <h5 class="mb-2">Python Project for Data Engineering</h5>
-                        <span class="badge badge-completed">Completed</span>
-                    </div>
-                    <div class="col-md-3 text-md-end mt-3 mt-md-0">
-                        <a href="https://www.coursera.org/account/accomplishments/verify/8BL6ULVC5GQJ" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
-                    </div>
                 </div>
             </div>
 
-            <!-- Certificat 3 -->
-            <div id="certification3" class="certification filter-4" data-wow-delay="0.6s">
-                <h4 class="mb-4">
-                    <a href="https://openclassrooms.com/fr/courses/7771531-decouvrez-les-librairies-python-pour-la-data-science" target="_blank" class="title-link">
-                        OpenClassrooms 
+            <!-- Case 3 — Zindi Africa / Orange -->
+            <div class="ccard ccard-or fu d2">
+                <div class="ccard-head">
+                    <span class="tag t-or">Zindi Africa Competition</span>
+                    <h3>Predicting Financial Health for 9,600 African SMEs</h3>
+                </div>
+                <div class="ccard-sections">
+                    <div class="csec csec-prob">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </span>
+                        <p>SME lenders in Southern Africa needed to segment businesses by financial health to <strong>improve credit risk decisions</strong>.</p>
+                    </div>
+                    <div class="csec csec-appr">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </span>
+                        <p>Cleaned 9,618 records × 39 features across 4 countries. <strong>Engineered 47 features.</strong> Benchmarked 4 algorithms with stratified CV.</p>
+                    </div>
+                    <div class="csec csec-impa">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </span>
+                        <p>Gradient Boosting: <strong>F1 = 0.82 weighted, 78.7% accuracy.</strong> FastAPI scoring API deployed for real-time batch prediction.</p>
+                    </div>
+                </div>
+                <div class="ccard-foot">
+                    <span class="tag t-or">GBM · FastAPI · Africa</span>
+                    <a href="https://github.com/kpatc/financial_health_index_prediction" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
                     </a>
-                </h4>
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-3 mb-3 mb-md-0">
-                        <img src="CSS_JS_IMG/Image/python_data_science.png" alt="Analytics Project" class="certificate-image img-fluid">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp"">
-                        <h6 class="mb-1">Course | Data</h6>
-                        <h5 class="mb-2">Python libraries for Data Science"</h5>
-                        <span class="badge badge-completed">Completed</span>
-                    </div>
-                    <div class="col-md-3 text-md-end mt-3 mt-md-0">
-                        <a href="https://openclassrooms.com/fr/course-certificates/8985579089" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
-                    </div>
                 </div>
             </div>
 
-            <!-- Certificat 4 -->
-            <!--div id="certification4" class="certification">
-                <h4 class="mb-4">
-                    <a href="https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect" class="title-link">
-                        AWS Solutions Architect Certificat Professionnel
+            <!-- Case 4 — Job Intelligence / Green
+            <div class="ccard ccard-gn fu d3">
+                <div class="ccard-head">
+                    <span class="tag t-gn">Data Engineering · Analytics</span>
+                    <h3>Job Market Intelligence Platform — Skills Really In Demand</h3>
+                </div>
+                <div class="ccard-sections">
+                    <div class="csec csec-prob">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </span>
+                        <p>Job seekers and career coaches lacked <strong>structured data on in-demand skills</strong> across data roles in Morocco.</p>
+                    </div>
+                    <div class="csec csec-appr">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </span>
+                        <p>Automated multi-source ingestion (Indeed, ReKrute). <strong>HDBSCAN clustering</strong> to segment job archetypes. Power BI dashboards for ongoing trend monitoring.</p>
+                    </div>
+                    <div class="csec csec-impa">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </span>
+                        <p>Quantified skill-demand by segment. Delivered <strong>prioritized skill gap recommendations</strong> for data professionals entering the market.</p>
+                    </div>
+                </div>
+                <div class="ccard-foot">
+                    <span class="tag t-gn">HDBSCAN · Power BI</span>
+                    <a href="https://github.com/kpatc/Job-intelligent" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
                     </a>
-                </h4>
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-3 mb-3 mb-md-0">
-                        <img src="path_to_aws_image.jpg" alt="AWS Project" class="certificate-image img-fluid">
+                </div>
+            </div> -->
+
+            <!-- Case 5 — Togo Internet / Gold -->
+            <div class="ccard ccard-cy fu d1">
+                <div class="ccard-head">
+                    <span class="tag t-go">Zindi Africa Competition · National Impact</span>
+                    <h3>Togo National Internet Connectivity — Demand Prediction</h3>
+                </div>
+                <div class="ccard-sections">
+                    <div class="csec csec-prob">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </span>
+                        <p>The Togolese government needed to predict household internet uptake across the country to guide <strong>FTTH infrastructure investment decisions</strong>.</p>
                     </div>
-                    <div class="col-md-7 col-sm-9 mb-3 mb-md-0">
-                        <h6 class="mb-1">Cours | AWS</h6>
-                        <h5 class="mb-2">Introduction à l'architecture cloud sur AWS</h5>
-                        <span class="badge badge-completed">Terminé</span>
+                    <div class="csec csec-appr">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </span>
+                        <p>End-to-end ML pipeline on a national survey dataset (~14,400 rows, ~4,000 features). Strict data quality checks, <strong>PCA (350 components)</strong> for dimensionality reduction, combined with curated categorical indicators.</p>
                     </div>
-                    <div class="col-md-3 text-md-end mt-3 mt-md-0">
-                        <a href="#" class="btn btn-primary btn-sm">Voir le Certificat</a>
+                    <div class="csec csec-impa">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </span>
+                        <p>XGBoost selected: <strong>ROC-AUC = 0.86</strong> on validation. Competition score: 0.7144. National-scale model guiding <strong>connectivity infrastructure priorities</strong>.</p>
                     </div>
                 </div>
-            </div-->
+                <div class="ccard-foot">
+                    <span class="tag t-or">XGBoost · PCA · National Policy</span>
+                    <a href="https://github.com/kpatc/MLTasks-Competitions" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Case 6 — Lakehouse / Blue
+            <div class="ccard ccard-bl fu d2">
+                <div class="ccard-head">
+                    <span class="tag t-bl">Data Engineering · Azure Databricks</span>
+                    <h3>Real-Time Food Delivery Analytics Lakehouse</h3>
+                </div>
+                <div class="ccard-sections">
+                    <div class="csec csec-prob">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </span>
+                        <p>Food delivery platform needed <strong>real-time analytics</strong> on orders, revenue and customer behavior at scale.</p>
+                    </div>
+                    <div class="csec csec-appr">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </span>
+                        <p>Production lakehouse on <strong>Azure Databricks</strong> (Medallion: Bronze/Silver/Gold). CDC via <strong>Debezium + Kafka</strong>. SCD Type 2 for historical tracking.</p>
+                    </div>
+                    <div class="csec csec-impa">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </span>
+                        <p>Stable, scalable reporting datasets with <strong>automated Databricks workflows.</strong> Optimized Delta tables via partitioning + Z-ORDER.</p>
+                    </div>
+                </div>
+                <div class="ccard-foot">
+                    <span class="tag t-bl">Databricks · Kafka · Delta</span>
+                    <a href="https://github.com/kpatc/healthcare-data-platform" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</section>
+
+<!-- ── TECHNICAL PROJECTS ──────────────────────────────────── -->
+<section id="projects">
+    <div class="container">
+        <span class="sec-label fu">Technical Projects</span>
+        <h2 class="sec-title fu d1">Engineering depth<br>across the full stack</h2>
+        <p class="sec-sub fu d2">Selected projects demonstrating technical breadth — from AI agents to data platforms.</p>
+
+        <div class="proj-grid">
+
+            <!-- Card 1 — Job Intelligence -->
+            <div class="proj-card fu d1">
+                <span class="tag t-gn">Data Engineering · Analytics</span>
+                <div class="proj-title">Job Market Intelligence Platform — Skills Really In Demand</div>
+                <p class="proj-desc">Automated scraping of Morocco data job listings (Indeed, ReKrute) with HDBSCAN clustering to segment archetypes and quantify skill demand. Power BI dashboards delivering prioritized skill gap recommendations.</p>
+                <div class="proj-foot">
+                    <div class="proj-tags">
+                        <span class="tag t-gn">HDBSCAN</span>
+                        <span class="tag t-gn">Power BI</span>
+                        <span class="tag t-gn">Scraping</span>
+                    </div>
+                    <a href="https://github.com/kpatc/Job-intelligent" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 — Lakehouse -->
+            <div class="proj-card fu d2">
+                <span class="tag t-bl">Data Engineering · Azure</span>
+                <div class="proj-title">Real-Time Food Delivery Analytics Lakehouse</div>
+                <p class="proj-desc">Medallion lakehouse on Azure Databricks with real-time CDC via Debezium + Kafka and SCD Type 2 historical tracking. Optimized Delta tables via partitioning + Z-ORDER for scalable reporting workflows.</p>
+                <div class="proj-foot">
+                    <div class="proj-tags">
+                        <span class="tag t-bl">Databricks</span>
+                        <span class="tag t-bl">Kafka</span>
+                        <span class="tag t-bl">Delta Lake</span>
+                    </div>
+                    <a href="https://github.com/kpatc/healthcare-data-platform" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 — DevAssist AI Agent -->
+            <div class="proj-card fu d3">
+                <span class="tag t-pu">AI Agents · MCP</span>
+                <div class="proj-title">DevAssist — AI Agent Platform</div>
+                <p class="proj-desc">Production-ready AI assistant combining LangGraph agents with real-time tool usage via Model Context Protocol. Integrated GitHub, Supabase, Exa MCP servers. Evaluated with DeepEval. Deployed on GKE with Terraform + Prometheus.</p>
+                <div class="proj-foot">
+                    <div class="proj-tags">
+                        <span class="tag t-pu">LangGraph</span>
+                        <span class="tag t-pu">MCP</span>
+                        <span class="tag t-pu">Kubernetes</span>
+                        <span class="tag t-pu">GCP</span>
+                    </div>
+                    <a href="https://github.com/ELhadratiOth/AI-Chat-Interface-With-MCP" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4 — Healthcare Data Platform -->
+            <div class="proj-card fu d4">
+                <span class="tag t-cy">Data Engineering · Healthcare</span>
+                <div class="proj-title">Healthcare Data Platform &amp; Analytics Stack</div>
+                <p class="proj-desc">Scalable healthcare data platform with ETL/ELT pipelines (Airflow + Airbyte), multi-layer dbt models (bronze/silver/gold), data quality checks with Great Expectations, and interactive dashboards in Superset.</p>
+                <div class="proj-foot">
+                    <div class="proj-tags">
+                        <span class="tag t-cy">Airflow</span>
+                        <span class="tag t-cy">dbt</span>
+                        <span class="tag t-cy">Airbyte</span>
+                        <span class="tag t-cy">Superset</span>
+                    </div>
+                    <a href="https://github.com/kpatc/healthcare-data-platform" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5 — Story Vision -->
+            <div class="proj-card fu d5">
+                <span class="tag t-or">Computer Vision · Deep Learning</span>
+                <div class="proj-title">Story Vision — AI Image Captioning</div>
+                <p class="proj-desc">Full-stack AI app generating descriptive captions from images using InceptionV3 encoder + LSTM decoder with attention mechanism. FastAPI backend with async file handling, React frontend with drag-and-drop and dark mode.</p>
+                <div class="proj-foot">
+                    <div class="proj-tags">
+                        <span class="tag t-or">PyTorch</span>
+                        <span class="tag t-or">InceptionV3</span>
+                        <span class="tag t-or">LSTM</span>
+                        <span class="tag t-or">FastAPI</span>
+                        <span class="tag t-or">React</span>
+                    </div>
+                    <a href="https://github.com/kpatc/Image-Captioning-AI-Story-Vision" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── EDUCATION ──────────────────────────────────────────── -->
+<section id="education">
+    <div class="container">
+        <span class="sec-label fu">Education</span>
+        <h2 class="sec-title fu d1">Engineering track with mathematics<br>and data foundations</h2>
+
+        <div class="edu-grid">
+
+            <!-- ENSA Al Hoceima -->
+            <div class="edu-card fu d2">
+                <img src="CSS_JS_IMG/Image/ensah.png" alt="ENSA Al Hoceima" class="edu-logo">
+                <div class="edu-body">
+                    <h3>Ecole Nationale des Sciences Appliquées d'Al Hoceima</h3>
+                    <p>Engineer's Degree — Data Engineering</p>
+                    <div class="edu-meta">
+                        <span>Oct 2023 – 2026</span>
+                        <span class="tag t-bl">Current · Final Year</span>
                     </div>
                 </div>
             </div>
-        <!--Certification End -->
-        <!-- Portfolio End -->
-        <div></div>
-        
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="section-header text-center">
-                    <!-- p>Awesome Discount</p-->
-                    <h2>Let's<span> Connect!</span> </h2>
+
+            <!-- ENSA Fès -->
+            <div class="edu-card fu d3">
+                <img src="CSS_JS_IMG/Image/ensaf.png" alt="ENSA Fès" class="edu-logo">
+                <div class="edu-body">
+                    <h3>Ecole Nationale des Sciences Appliquées de Fès</h3>
+                    <p>Integrated Preparatory Classes — Applied Mathematics</p>
+                    <div class="edu-meta">
+                        <span>Oct 2021 – Jul 2023</span>
+                        <span class="tag t-gn">Completed</span>
+                    </div>
                 </div>
-                
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── SKILLS ────────────────────────────────────────────── -->
+<section id="skills">
+    <div class="container">
+        <span class="sec-label fu">Skills</span>
+        <h2 class="sec-title fu d1">Full-stack data capability</h2>
+        <p class="sec-sub fu d2">From raw ingestion to deployed models and board-ready recommendations.</p>
+
+        <div class="skills-wrap">
+            <div class="fu d1">
+                <div class="sg-lbl">
+                    <div class="sg-icon" style="background:rgba(59,130,246,.1);color:var(--blue-hi);">⌨</div>
+                    <span class="sg-name">Languages &amp; Libraries</span>
+                </div>
+                <div class="pills">
+                    <span class="pill pl-bl">Python</span><span class="pill pl-bl">NumPy</span><span class="pill pl-bl">Pandas</span><span class="pill pl-bl">Scikit-learn</span><span class="pill pl-bl">TensorFlow</span><span class="pill pl-bl">Keras</span><span class="pill pl-bl">PyTorch</span><span class="pill pl-bl">NLTK</span><span class="pill pl-bl">Gensim</span><span class="pill pl-bl">SpaCy</span><span class="pill pl-bl">SQL</span><span class="pill pl-bl">Java</span>
+                </div>
+            </div>
+            <div class="fu d2">
+                <div class="sg-lbl">
+                    <div class="sg-icon" style="background:var(--purple-dim);color:var(--purple);">📊</div>
+                    <span class="sg-name">Analytics &amp; Machine Learning</span>
+                </div>
+                <div class="pills">
+                    <span class="pill pl-pu">Regression</span><span class="pill pl-pu">SVM</span><span class="pill pl-pu">Decision Trees</span><span class="pill pl-pu">XGBoost</span><span class="pill pl-pu">Random Forest</span><span class="pill pl-pu">Gradient Boosting</span><span class="pill pl-pu">Clustering</span><span class="pill pl-pu">CNN</span><span class="pill pl-pu">RNN / LSTM</span><span class="pill pl-pu">BiLSTM</span><span class="pill pl-pu">GRU</span><span class="pill pl-pu">NLP</span><span class="pill pl-pu">LLMs</span><span class="pill pl-pu">RAG</span><span class="pill pl-pu">Statistical Modeling</span><span class="pill pl-pu">A/B Testing</span><span class="pill pl-pu">Power BI</span><span class="pill pl-pu">Tableau</span><span class="pill pl-pu">Seaborn</span>
+                </div>
+            </div>
+            <div class="fu d3">
+                <div class="sg-lbl">
+                    <div class="sg-icon" style="background:var(--orange-dim);color:var(--orange);">🔧</div>
+                    <span class="sg-name">Data Engineering</span>
+                </div>
+                <div class="pills">
+                    <span class="pill pl-or">Apache Kafka</span><span class="pill pl-or">Apache Spark</span><span class="pill pl-or">dbt</span><span class="pill pl-or">Airflow</span><span class="pill pl-or">Databricks</span><span class="pill pl-or">Delta Lake</span><span class="pill pl-or">Snowflake</span><span class="pill pl-or">BigQuery</span><span class="pill pl-or">Airbyte</span><span class="pill pl-or">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="fu d4">
+                <div class="sg-lbl">
+                    <div class="sg-icon" style="background:var(--cyan-dim);color:var(--cyan);">🤖</div>
+                    <span class="sg-name">AI &amp; LLMs</span>
+                </div>
+                <div class="pills">
+                    <span class="pill pl-cy">LangChain</span><span class="pill pl-cy">LangGraph</span><span class="pill pl-cy">RAG</span><span class="pill pl-cy">ChromaDB</span><span class="pill pl-cy">CrewAI</span><span class="pill pl-cy">HuggingFace</span><span class="pill pl-cy">Langfuse</span><span class="pill pl-cy">MCP</span><span class="pill pl-cy">LiteLLM</span>
+                </div>
+            </div>
+            <div class="fu d5">
+                <div class="sg-lbl">
+                    <div class="sg-icon" style="background:var(--green-dim);color:var(--green);">☁</div>
+                    <span class="sg-name">Cloud &amp; DevOps</span>
+                </div>
+                <div class="pills">
+                    <span class="pill pl-gn">GCP</span><span class="pill pl-gn">Azure</span><span class="pill pl-gn">AWS</span><span class="pill pl-gn">Docker</span><span class="pill pl-gn">Kubernetes</span><span class="pill pl-gn">Terraform</span><span class="pill pl-gn">Prometheus</span><span class="pill pl-gn">Grafana</span><span class="pill pl-gn">CI/CD</span>
                 </div>
             </div>
         </div>
-        <!-- Banner End -->
-        
-        
-        
-        
-        
-        <!-- Testimonial Start -->
-        <!--div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
-            <div class="container">
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-1.jpg" alt="Testimonial 1" class="img-fluid" loading="lazy">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-2.jpg" alt="Testimonial 2" class="img-fluid" loading="lazy">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-3.jpg" alt="Testimonial 3" class="img-fluid" loading="lazy">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
+    </div>
+</section>
+
+<!-- ── CERTIFICATIONS ─────────────────────────────────────── -->
+<section id="certs">
+    <div class="container">
+        <span class="sec-label fu">Certifications</span>
+        <h2 class="sec-title fu d1">Verified credentials</h2>
+        <div class="certs-grid">
+            <div class="cert fu d1">
+                <div class="cert-dot" style="background:#3B82F6;box-shadow:0 0 8px rgba(59,130,246,.5)"></div>
+                <div class="cert-info"><h4>BCG X Data Science Simulation</h4><span>Forage &nbsp;·&nbsp; Mar 2026</span></div>
+            </div>
+            <div class="cert fu d2">
+                <div class="cert-dot" style="background:#3B82F6;box-shadow:0 0 8px rgba(59,130,246,.5)"></div>
+                <div class="cert-info"><h4>BCG GenAI Consulting Simulation</h4><span>Forage &nbsp;·&nbsp; Feb 2026</span></div>
+            </div>
+            <div class="cert fu d3">
+                <div class="cert-dot" style="background:#06B6D4;box-shadow:0 0 8px rgba(6,182,212,.5)"></div>
+                <div class="cert-info"><h4>Oracle Cloud GenAI Professional</h4><span>Oracle &nbsp;·&nbsp; Sep 2025</span></div>
+            </div>
+            <div class="cert fu d1">
+                <div class="cert-dot" style="background:#FBBF24;box-shadow:0 0 8px rgba(251,191,36,.5)"></div>
+                <div class="cert-info"><h4>Spark, Hadoop &amp; Snowflake — Big Data Specialization</h4><span>Duke University &nbsp;·&nbsp; Oct 2025</span></div>
+            </div>
+            <div class="cert fu d2">
+                <div class="cert-dot" style="background:#FB923C;box-shadow:0 0 8px rgba(249,115,22,.5)"></div>
+                <div class="cert-info"><h4>AWS Cloud Quest: Cloud Practitioner</h4><span>Amazon Web Services &nbsp;·&nbsp; Apr 2025</span></div>
+            </div>
+            <div class="cert fu d3">
+                <div class="cert-dot" style="background:#4ADE80;box-shadow:0 0 8px rgba(34,197,94,.4)"></div>
+                <div class="cert-info"><h4>Neo4j Certified Professional</h4><span>Neo4j &nbsp;·&nbsp; Feb 2025</span></div>
+            </div>
+            <div class="cert fu d4">
+                <div class="cert-dot" style="background:#A78BFA;box-shadow:0 0 8px rgba(139,92,246,.5)"></div>
+                <div class="cert-info"><h4>AI Agents Fundamentals</h4><span>HuggingFace &nbsp;·&nbsp; Apr 2025</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────── -->
+<section id="contact">
+    <div class="container">
+        <div class="contact-in">
+            <span class="sec-label fu" style="justify-content:center">Contact</span>
+            <h2 class="contact-h fu d1">Let's talk data<br>&amp; strategy</h2>
+            <p class="contact-sub fu d2">
+                Open to consulting internships and full-time roles in data analytics &amp; AI.<br>
+                Based in Morocco — open to relocate.
+            </p>
+            <a href="mailto:josuekpatcha1@gmail.com" class="contact-email fu d3">josuekpatcha1@gmail.com</a>
+            <br>
+            <a href="tel:+212710848111" class="contact-phone fu d3">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +212 710 84 81 11
+            </a>
+            <div class="contact-links fu d4">
+                <a href="https://www.linkedin.com/in/josuekpatcha/" target="_blank" rel="noopener" class="btn btn-p">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/kpatc" target="_blank" rel="noopener" class="btn btn-o">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                </a>
+                <div class="cv-drop">
+                    <button type="button" class="btn btn-o cv-drop-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        Download CV
+                        <svg class="cv-drop-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="cv-drop-menu">
+                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV — English</a>
+                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV — Français</a>
                     </div>
                 </div>
             </div>
         </div>
-        <Testimonial End -->
+    </div>
+</section>
 
-
-        <!-- Team Start -->
-        <div class="team" id="team">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Association Memberships & Roles</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <a href="https://www.linkedin.com/company/100310952/admin/dashboard/" target="_blank">
-                                    <img src="CSS_JS_IMG/Image/aeeh.png" alt="AEEH Logo" class="img-fluid" loading="lazy">
-                                </a>
-                            </div>
-                            <div class="team-text">
-                                <h2>Leadership & Volunteer Experience</h2>
-                                <h4>Vice President</h4>
-                                <p>
-                                    Vice President, AEEH (Association of Foreign Students in Al Hoceima)<br>
-                                    • 2023-2024 term<br>
-                                    • 2024-2025 term
-                                </p>
-                                <div class="team-social">
-                                    <!--a class="btn" href=""><i class="fab fa-twitter"></i></a-->
-                                    <!--a class="btn" href=""><i class="fab fa-facebook-f"></i></a-->
-                                    <a class="btn" href="https://www.linkedin.com/company/100310952/admin/dashboard/"><i class="fab fa-linkedin-in"></i></a>
-                                    <!--a class="btn" href=""><i class="fab fa-instagram"></i></a-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Hobbies</p>
-                    <h2>I'm fond of... !</h2>
-                </div>
-                <div class="row">      
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="CSS_JS_IMG/Image/Football Club Logo aeeh.png" alt="AEEH Football Club" class="img-fluid" loading="lazy">
-                            </div>
-                            <div class="team-text">
-                                <h2>Football</h2>
-                                <h4>Player</h4>
-                                <p>
-                                    A member of AEEH(Association of Foreign Students in Al Hoceima) Team Football Club(2023-Nowdays)
-                                </p>
-                                <!--div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div-->
-                            </div>
-                        </div>
-                    </div>
-                    <!--<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/marathon.jpg" alt="Marathon" class="img-fluid" loading="lazy">
-                            </div>
-                            <div class="team-text">
-                                <h2>Paris Marathon 2023</h2>
-                                <h4>Finisher</h4>
-                                <p>
-                                    Completed my first marathon (Schnider Electric Paris Marathon 2023) with time 5 hr 25 min.
-                                </p>
-                                 <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> --> 
-                    <!-- div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/paris.jpeg" alt="Paris" class="img-fluid" loading="lazy">
-                            </div>
-                            <div class="team-text">
-                                <h2>Paris Versailles 2022</h2>
-                                <h4>Finisher</h4>
-                                <p>
-                                    Completed the Paris Versailles Run 2022 with time 1 hr 49 min.
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div -->
-                </div>
-            </div>
-        </div> 
-        <!-- Team End -->
-        
-        
-        <!-- Contact Start -->
-        <!-- <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div -->
-        <!-- Contact End -->
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s" id="isfooter">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Send me a Message !</h2>
-                        <h3>Essohanam Josué</h3>
-                        <div class="footer-menu">
-                            <p>+212 679 30 10 57 </p>
-                            <p><a class="" href="mailto:josuekpatcha1@gmail.com" >josuekpatcha1@gmail.com </a> </p>
-                        </div>
-                        <h3>Al Hoceima,Morocco</h3>
-
-                        <div class="footer-social">
-                            <!--a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a -->
-                            <a href="https://github.com/kpatc" target="_blank"><i class="fab fa-github"></i></a>
-
-                            <a href="https://www.linkedin.com/in/josuekpatcha/" target="_blank"><i class="fab fa-linkedin-in" ></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Josue Kpatcha</a>, All Rights Reserved  <a href="https://htmlcodex.com"></a></p>
-                </div>
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+    <div class="container">
+        <div class="foot-in">
+            <p class="foot-copy">© 2026 Essohanam Josué Kpatcha &nbsp;·&nbsp; Casablanca, Morocco</p>
+            <div class="foot-links">
+                <a href="https://github.com/kpatc" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/josuekpatcha/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:josuekpatcha1@gmail.com">Email</a>
             </div>
         </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
+    </div>
+</footer>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <!-- Removed Bootstrap 4 JS (now using Bootstrap 5) -->
-        <script src="https://ayushtankha.github.io/lib/easing/easing.min.js"></script>
-        <script src="https://ayushtankha.github.io/lib/wow/wow.min.js"></script>
-        <script src="https://ayushtankha.github.io/lib/waypoints/waypoints.min.js"></script>
-        <script src="https://ayushtankha.github.io/lib/typed/typed.min.js"></script>
-        <script src="https://ayushtankha.github.io/lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="https://ayushtankha.github.io/lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="https://ayushtankha.github.io/lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="CSS_JS_IMG/mail/jqBootstrapValidation.min.js"></script>
-        <script src="CSS_JS_IMG/mail/contact.js"></script>
+<a href="#home" class="btt" id="btt" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+</a>
 
-        <!--Boostrap js-->
+<script>
+/* ── PARTICLE CANVAS ──────────────────────────────────── */
+(function(){
+    const canvas = document.getElementById('cvs');
+    const ctx    = canvas.getContext('2d');
+    let W, H, P  = [];
+    const mouse  = { x: -9999, y: -9999 };
+    const LINK   = 145, MOUSE_RADIUS = 120, MOUSE_FORCE = 0.012;
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Template Javascript -->
-        <script src="CSS_JS_IMG/CSS_JS/main.js"></script>
-    </body>
+    function resize(){
+        W = canvas.width  = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
+    }
+
+    function Dot(){
+        this.x   = Math.random() * W;
+        this.y   = Math.random() * H;
+        this.vx  = (Math.random() - .5) * .5;
+        this.vy  = (Math.random() - .5) * .5;
+        this.r   = Math.random() * 1.6 + .5;
+        /* alternate between blue and cyan tint */
+        this.hue = Math.random() > .6 ? '6,182,212' : '59,130,246';
+    }
+    Dot.prototype.tick = function(){
+        /* gentle mouse attraction */
+        const dx = mouse.x - this.x, dy = mouse.y - this.y;
+        const d  = Math.sqrt(dx*dx + dy*dy);
+        if(d < MOUSE_RADIUS && d > 1){
+            this.vx += (dx / d) * MOUSE_FORCE;
+            this.vy += (dy / d) * MOUSE_FORCE;
+        }
+        /* speed cap */
+        const spd = Math.sqrt(this.vx*this.vx + this.vy*this.vy);
+        if(spd > 1.2){ this.vx = (this.vx/spd)*1.2; this.vy = (this.vy/spd)*1.2; }
+        this.x += this.vx; this.y += this.vy;
+        if(this.x < 0) this.x = W; if(this.x > W) this.x = 0;
+        if(this.y < 0) this.y = H; if(this.y > H) this.y = 0;
+    };
+
+    function init(){
+        resize();
+        P = [];
+        const n = Math.min(Math.floor(W * H / 9500), 110);
+        for(let i = 0; i < n; i++) P.push(new Dot());
+    }
+
+    function draw(){
+        ctx.clearRect(0, 0, W, H);
+        /* connections */
+        for(let i = 0; i < P.length; i++){
+            for(let j = i + 1; j < P.length; j++){
+                const dx = P[i].x - P[j].x, dy = P[i].y - P[j].y;
+                const d  = Math.sqrt(dx*dx + dy*dy);
+                if(d < LINK){
+                    const alpha = .18 * (1 - d / LINK);
+                    ctx.beginPath();
+                    ctx.strokeStyle = `rgba(59,130,246,${alpha})`;
+                    ctx.lineWidth = .8;
+                    ctx.moveTo(P[i].x, P[i].y);
+                    ctx.lineTo(P[j].x, P[j].y);
+                    ctx.stroke();
+                }
+            }
+        }
+        /* dots */
+        P.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+            ctx.fillStyle = `rgba(${p.hue},.45)`;
+            ctx.fill();
+            p.tick();
+        });
+        requestAnimationFrame(draw);
+    }
+
+    init();
+    draw();
+
+    /* track mouse only over hero */
+    const hero = document.getElementById('home');
+    hero.addEventListener('mousemove', e => {
+        const r  = canvas.getBoundingClientRect();
+        mouse.x  = e.clientX - r.left;
+        mouse.y  = e.clientY - r.top;
+    }, {passive:true});
+    hero.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+
+    window.addEventListener('resize', init);
+})();
+
+/* ── NAVBAR ───────────────────────────────────────────── */
+const nav        = document.getElementById('nav');
+const scrollProg = document.getElementById('scroll-prog');
+const navLinks   = document.querySelectorAll('#navLinks a');
+const sections   = document.querySelectorAll('section[id]');
+const btt        = document.getElementById('btt');
+
+/* rAF-throttled scroll handler — keeps main thread free */
+let rafPending = false;
+function onScroll(){
+    if(rafPending) return;
+    rafPending = true;
+    requestAnimationFrame(() => {
+        const y  = window.scrollY;
+        const dh = document.documentElement.scrollHeight - window.innerHeight;
+
+        /* sticky shadow */
+        nav.classList.toggle('stuck', y > 40);
+
+        /* scroll progress bar */
+        scrollProg.style.width = (dh > 0 ? (y / dh) * 100 : 0) + '%';
+
+        /* back to top */
+        btt.classList.toggle('show', y > 400);
+
+        rafPending = false;
+    });
+}
+window.addEventListener('scroll', onScroll, {passive: true});
+
+/* ── ACTIVE LINK — IntersectionObserver (non-blocking) ── */
+let activeId = '';
+const sectionIO = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            activeId = entry.target.id;
+            navLinks.forEach(a =>
+                a.classList.toggle('act', a.getAttribute('href') === '#' + activeId)
+            );
+        }
+    });
+}, {
+    rootMargin: '-40% 0px -55% 0px',   /* trigger when section centre crosses viewport mid */
+    threshold: 0
+});
+sections.forEach(s => sectionIO.observe(s));
+
+/* ── MOBILE NAV ───────────────────────────────────────── */
+const mob = document.getElementById('mobNav');
+const hbg = document.getElementById('hbg');
+function openMob()  { mob.classList.add('open');    hbg.classList.add('open');    document.body.style.overflow='hidden'; }
+function closeMob() { mob.classList.remove('open'); hbg.classList.remove('open'); document.body.style.overflow=''; }
+hbg.addEventListener('click', openMob);
+document.getElementById('mobX').addEventListener('click', closeMob);
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMob));
+
+/* ── SMOOTH SCROLL ────────────────────────────────────── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e){
+        const t = document.querySelector(this.getAttribute('href'));
+        if(!t) return;
+        e.preventDefault();
+        window.scrollTo({ top: t.offsetTop - nav.offsetHeight, behavior: 'smooth' });
+    });
+});
+
+/* ── FADE-UP (Intersection Observer) ─────────────────── */
+const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+
+document.querySelectorAll('.fu').forEach(el => io.observe(el));
+
+/* ── CV DROPDOWN ──────────────────────────────────────── */
+document.querySelectorAll('.cv-drop').forEach(drop => {
+    drop.querySelector('.cv-drop-btn').addEventListener('click', e => {
+        e.stopPropagation();
+        const wasOpen = drop.classList.contains('open');
+        document.querySelectorAll('.cv-drop').forEach(d => d.classList.remove('open'));
+        if(!wasOpen) drop.classList.add('open');
+    });
+});
+document.addEventListener('click', () => {
+    document.querySelectorAll('.cv-drop').forEach(d => d.classList.remove('open'));
+});
+document.addEventListener('keydown', e => {
+    if(e.key === 'Escape') document.querySelectorAll('.cv-drop').forEach(d => d.classList.remove('open'));
+});
+</script>
+</body>
 </html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essohanam Josué KPATCHA — CV</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.45;
+    color: #1a1a1a;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 14mm 16mm 12mm 16mm;
+  }
+  .header { border-bottom: 2px solid #1a56db; padding-bottom: 10px; margin-bottom: 12px; }
+  .header h1 { font-size: 20px; font-weight: 700; letter-spacing: 0.5px; color: #0f172a; }
+  .header .title { font-size: 11.5px; color: #1a56db; font-weight: 600; margin: 3px 0 6px; }
+  .contact-line { display: flex; flex-wrap: wrap; gap: 14px; font-size: 9.5px; color: #374151; }
+  .contact-line span { display: flex; align-items: center; gap: 3px; }
+  .section { margin-bottom: 11px; }
+  .section-title {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #1a56db;
+    border-bottom: 1px solid #dbeafe;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+  }
+  .profile { font-size: 10px; color: #374151; line-height: 1.5; }
+  .skills-grid { display: grid; grid-template-columns: 140px 1fr; gap: 4px 10px; }
+  .skill-cat { font-weight: 700; font-size: 9.5px; color: #0f172a; padding-top: 1px; }
+  .skill-val { font-size: 9.5px; color: #374151; }
+  .exp-item { margin-bottom: 9px; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .exp-role { font-weight: 700; font-size: 10.5px; color: #0f172a; }
+  .exp-date { font-size: 9px; color: #6b7280; white-space: nowrap; }
+  .exp-company { font-size: 9.5px; color: #1a56db; font-weight: 600; margin-bottom: 4px; }
+  .exp-bullets { padding-left: 11px; }
+  .exp-bullets li { font-size: 9.5px; color: #374151; margin-bottom: 2px; }
+  .exp-tech { font-size: 8.5px; color: #6b7280; margin-top: 3px; }
+  .exp-tech span { font-weight: 600; color: #374151; }
+  .proj-item { margin-bottom: 8px; }
+  .proj-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .proj-title { font-weight: 700; font-size: 10px; color: #0f172a; }
+  .proj-date { font-size: 9px; color: #6b7280; }
+  .proj-tag { font-size: 8px; color: #1a56db; font-weight: 600; margin-bottom: 3px; }
+  .proj-bullets { padding-left: 11px; }
+  .proj-bullets li { font-size: 9.5px; color: #374151; margin-bottom: 2px; }
+  .proj-tech { font-size: 8.5px; color: #6b7280; margin-top: 2px; }
+  .edu-item { display: flex; justify-content: space-between; margin-bottom: 5px; }
+  .edu-left .school { font-weight: 700; font-size: 10px; color: #0f172a; }
+  .edu-left .degree { font-size: 9.5px; color: #374151; }
+  .edu-date { font-size: 9px; color: #6b7280; white-space: nowrap; }
+  .certs { font-size: 9.5px; color: #374151; line-height: 1.6; }
+  @media print {
+    body { padding: 10mm 14mm 10mm 14mm; }
+    @page { margin: 0; size: A4; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ESSOHANAM JOSUÉ KPATCHA</h1>
+  <div class="title">Consultant Data & IA — Candidat PFE · Disponible immédiatement</div>
+  <div class="contact-line">
+    <span>📞 +212 710 84 81 11</span>
+    <span>✉ josuekpatcha1@gmail.com</span>
+    <span>🔗 linkedin.com/in/josuekpatcha</span>
+    <span>💻 github.com/kpatc</span>
+    <span>📍 Casablanca, Maroc</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Profil</div>
+  <div class="profile">
+    Étudiant ingénieur en dernière année à l'ENSA Al Hoceima, spécialité Data Engineering. Capacité à collecter, transformer 
+    et analyser des données complexes pour produire des indicateurs actionnables à destination des décideurs. Expérience en 
+    conception de pipelines analytiques, modélisation prédictive et restitution visuelle — avec une exposition directe aux 
+    frameworks consulting BCG. Fort goût de l'analyse, esprit de synthèse et orientation résultats. Disponible immédiatement · Casablanca CFC.
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Compétences Techniques</div>
+  <div class="skills-grid">
+    <div class="skill-cat">Analytics & ML</div>
+    <div class="skill-val">Python (Pandas, NumPy, Scikit-learn, XGBoost, LightGBM), SQL avancé, Modélisation statistique, Feature Engineering, Classification, Clustering, Régression, A/B Testing</div>
+    <div class="skill-cat">Visualisation & BI</div>
+    <div class="skill-val">Power BI, Apache Superset, Plotly, Matplotlib, Seaborn — tableaux de bord interactifs, KPIs, restitution exécutive</div>
+    <div class="skill-cat">Data Engineering</div>
+    <div class="skill-val">Pipelines ETL/ELT (Airflow, dbt, Airbyte), Kafka, Spark, Azure Databricks, Snowflake, PostgreSQL, Great Expectations</div>
+    <div class="skill-cat">IA Générative & Agents</div>
+    <div class="skill-val">LangChain, LangGraph, RAG, LLMs (Groq, Gemini), Langfuse, ChromaDB, HuggingFace, MCP</div>
+    <div class="skill-cat">Cloud & DevOps</div>
+    <div class="skill-val">GCP, Azure (Databricks), AWS, Docker, Kubernetes, Terraform, CI/CD</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Expériences Professionnelles</div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <div class="exp-role">Stagiaire IA & Data Engineering</div>
+      <div class="exp-date">Juin – Sep. 2025 · 4 mois</div>
+    </div>
+    <div class="exp-company">ISICOD — Rabat, Maroc</div>
+    <ul class="exp-bullets">
+      <li>Co-conçu une plateforme IA biométrique end-to-end pour la classification d'empreintes digitales (12 classes) et le comptage de crêtes — traitant 15 848 images de 5 sources hétérogènes. Dataset le plus complet de la littérature sur ce problème.</li>
+      <li>Livré une API REST de production (FastAPI + React) avec inférence temps réel et dashboard de supervision des métriques — directement opérationnel pour l'équipe produit.</li>
+      <li>Seul implémenteur d'un système de réentraînement Human-in-the-Loop : les corrections utilisateurs déclenchent un réentraînement incrémental PyTorch, permettant l'amélioration continue du modèle en production.</li>
+    </ul>
+    <div class="exp-tech"><span>Technologies :</span> Python · PyTorch · FastAPI · React · PostgreSQL · Docker</div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <div class="exp-role">Stagiaire Machine Learning</div>
+      <div class="exp-date">Juin – Août 2024 · 2 mois</div>
+    </div>
+    <div class="exp-company">3D Smart Factory — Mohammedia, Maroc</div>
+    <ul class="exp-bullets">
+      <li>Conçu des couches KAN personnalisées (Kolmogorov–Arnold Networks) intégrées dans un 3D U-Net pour la segmentation volumétrique d'images médicales IRM — <strong>+3 % de performance</strong> par rapport au baseline 3D U-Net standard.</li>
+      <li>Optimisation systématique de l'architecture (profondeur, noyaux, stratégies d'activation) via PyTorch sur datasets d'images médicales.</li>
+    </ul>
+    <div class="exp-tech"><span>Technologies :</span> Python · PyTorch · 3D U-Net · KAN · Imagerie Médicale · NumPy</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Projets Sélectionnés</div>
+
+  <div class="proj-item">
+    <div class="proj-header">
+      <div class="proj-title">Analyse du Churn PowerCo — Simulation BCG Data Science</div>
+      <div class="proj-date">Mars 2026</div>
+    </div>
+    <div class="proj-tag">Framework Analytics BCG · Simulation Consulting</div>
+    <ul class="proj-bullets">
+      <li>Réfutation de l'hypothèse initiale du client : diagnostic des drivers de churn sur 14 600+ clients et 193 000 enregistrements de prix — <strong>la marge et le segment client sont les vrais drivers</strong>, pas la sensibilité prix.</li>
+      <li>Engineering de 50+ variables, benchmark RF/GB/XGBoost — XGBoost sélectionné : ROC-AUC = 0,68, Précision = 0,96. Synthèse exécutive avec recommandation de rétention ciblée.</li>
+    </ul>
+    <div class="proj-tech"><span>Technologies :</span> Python · XGBoost · Pandas · Matplotlib · Seaborn</div>
+  </div>
+
+  <div class="proj-item">
+    <div class="proj-header">
+      <div class="proj-title">Analyse Financière IA — Simulation BCG GenAI</div>
+      <div class="proj-date">Fév. 2026</div>
+    </div>
+    <div class="proj-tag">BCG GenAI Team · SEC EDGAR · Architecture RAG</div>
+    <ul class="proj-bullets">
+      <li>Système d'intelligence financière répondant à la question consulting "Comment se porte cette entreprise ?" — extraction de 2 000+ enregistrements de 34 sociétés × 3 ans via mapping XBRL depuis SEC EDGAR.</li>
+      <li>Calcul de 20+ KPIs financiers (ROE, ROA, marge nette, CAGR) benchmarkés par secteur. Moteur RAG hybride (ChromaDB + SQLite, Groq Llama 3.3-70b) avec observabilité Langfuse et failover LiteLLM.</li>
+    </ul>
+    <div class="proj-tech"><span>Technologies :</span> Python · LangChain · ChromaDB · SQLite · Groq · Langfuse · Flask · React</div>
+  </div>
+
+  <div class="proj-item">
+    <div class="proj-header">
+      <div class="proj-title">Prédiction de Santé Financière des PME — Compétition Zindi Africa</div>
+      <div class="proj-date">Jan. 2026</div>
+    </div>
+    <div class="proj-tag">Risque Crédit PME · Afrique Australe · 9 600 entreprises</div>
+    <ul class="proj-bullets">
+      <li>Système de classification de santé financière sur 9 618 enregistrements × 47 variables (4 pays). Gradient Boosting sélectionné : <strong>F1 = 0,82 pondéré, précision 78,7 %</strong>. API FastAPI déployée avec dashboard exécutif.</li>
+    </ul>
+    <div class="proj-tech"><span>Technologies :</span> Python · XGBoost · scikit-learn · FastAPI · Pandas</div>
+  </div>
+
+  <div class="proj-item">
+    <div class="proj-header">
+      <div class="proj-title">Prédiction de la Demande Internet — Togo National FTTH</div>
+      <div class="proj-date">Mai–Juin 2024</div>
+    </div>
+    <div class="proj-tag">Compétition Zindi Africa · Politique Nationale · Infrastructure FTTH</div>
+    <ul class="proj-bullets">
+      <li>Pipeline ML sur enquête nationale (~14 400 lignes, ~4 000 variables) pour prédire l'adoption d'internet et guider les investissements d'infrastructure gouvernementaux. XGBoost : <strong>ROC-AUC = 0,86</strong>, score compétition 0,7144.</li>
+    </ul>
+    <div class="proj-tech"><span>Technologies :</span> Python · XGBoost · PCA · Pandas · Scikit-learn</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Formation</div>
+  <div class="edu-item">
+    <div class="edu-left">
+      <div class="school">Ecole Nationale des Sciences Appliquées d'Al Hoceima (ENSA)</div>
+      <div class="degree">Diplôme d'Ingénieur — Data Engineering</div>
+    </div>
+    <div class="edu-date">Oct. 2023 – Juin 2026</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-left">
+      <div class="school">Ecole Nationale des Sciences Appliquées de Fès (ENSA)</div>
+      <div class="degree">Classes Préparatoires Intégrées — Mathématiques Appliquées</div>
+    </div>
+    <div class="edu-date">Oct. 2021 – Juin 2023</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Certifications</div>
+  <div class="certs">
+    Oracle Cloud Infrastructure 2025 — Certified Generative AI Professional &nbsp;·&nbsp;
+    Spark, Hadoop & Snowflake for Data Engineering — Duke University &nbsp;·&nbsp;
+    AI Agents Fundamentals — HuggingFace &nbsp;·&nbsp;
+    AWS Cloud Quest: Cloud Practitioner — Amazon Web Services &nbsp;·&nbsp;
+    Neo4j Certified Professional &nbsp;·&nbsp;
+    ETL and Data Pipelines with Shell, Airflow & Kafka — IBM &nbsp;·&nbsp;
+    Introduction & Intermediate Machine Learning — Kaggle / Zindi Africa
+  </div>
+</div>
+
+</body>
+</html>
