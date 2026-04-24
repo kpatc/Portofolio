@@ -686,14 +686,38 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
    EXPERIENCE (inline inside About)
    ============================================================ */
 .about-exp{
-    display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;
+    display:flex;flex-direction:column;gap:16px;margin-top:16px;
 }
+.about-exp-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .exp-card{
     background:var(--card);border:1px solid var(--border);border-radius:var(--rl);
     padding:28px 32px;
     transition:border-color var(--ease),box-shadow var(--ease),transform var(--ease);
 }
 .exp-card:hover{border-color:var(--border-hi);transform:translateY(-2px);box-shadow:var(--sh)}
+.exp-card--current{
+    border-color:rgba(56,189,248,.45);
+    box-shadow:0 0 0 1px rgba(56,189,248,.18),0 4px 24px rgba(56,189,248,.12);
+}
+.exp-card--current:hover{
+    border-color:rgba(56,189,248,.7);
+    box-shadow:0 0 0 1px rgba(56,189,248,.35),0 6px 32px rgba(56,189,248,.2);
+}
+.exp-current-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:#38bdf8;background:rgba(56,189,248,.12);
+    border:1px solid rgba(56,189,248,.3);border-radius:99px;
+    padding:3px 10px 3px 8px;
+}
+.exp-pulse{
+    width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;
+    animation:exp-pulse-anim 1.8s ease-in-out infinite;
+}
+@keyframes exp-pulse-anim{
+    0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.55)}
+    50%{box-shadow:0 0 0 5px rgba(34,197,94,0)}
+}
 .exp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:14px}
 .exp-role{font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:4px}
 .exp-company{font-size:.85rem;font-weight:600;color:var(--blue-hi)}
@@ -775,7 +799,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
     .about-photo{max-width:260px}
     .certs-grid{grid-template-columns:1fr}
     .cases-hdr{flex-direction:column;align-items:flex-start}
-    .about-exp{grid-template-columns:1fr}
+    .about-exp-row{grid-template-columns:1fr}
     .exp-top{flex-direction:column;gap:4px}
     .exp-period{text-align:left}
     .exp-card{padding:20px}
@@ -955,38 +979,78 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
         </div>
         <div class="about-exp">
 
-            <div class="exp-card fu d5">
+            <!-- ── GeTeam — current, full width ────────────── -->
+            <div class="exp-card exp-card--current fu d5">
                 <div class="exp-top">
                     <div>
-                        <div class="exp-role">AI &amp; Data Engineering Intern</div>
-                        <div class="exp-company">ISICOD</div>
+                        <div class="exp-role">Data &amp; AI Engineer Intern — End-of-Studies Project (PFE)</div>
+                        <div class="exp-company">GeTeam</div>
                     </div>
-                    <div class="exp-period">Jun 2025 – Sep 2025 &nbsp;·&nbsp; 4 months<br>Rabat, Morocco</div>
+                    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+                        <span class="exp-current-badge"><span class="exp-pulse"></span>Current</span>
+                        <div class="exp-period">Mar 2026 – Present<br>Casablanca, Morocco</div>
+                    </div>
                 </div>
-                <p class="exp-desc">Co-built an end-to-end biometric AI platform for fingerprint classification &amp; ridge counting across 12 classes. Sole implementer of the Human-in-the-Loop retraining system enabling continuous model improvement in production.</p>
+                <p class="exp-desc">Designing an end-to-end AI system to automatically identify jobs of equal value within companies — ensuring compliance with EU Pay Transparency Directive 2023/970.<br><br>
+                The system processes raw HR data through a 6-layer pipeline (ingestion to legally admissible evidence). Key work: fine-tuning CamemBERT for gender bias detection with contrastive learning; semantic ESCO occupation mapping via FAISS + sentence-transformers + LLM reranking; knowledge graph in Neo4j linking 300+ French collective agreements (CCN) to EU ESCO taxonomy; Constitutional 3-agent LLM scoring system evaluating 16 sub-criteria with full audit trail; interpretable clustering with SHAP explainability producing court-defensible equal-value groups.</p>
                 <div class="exp-tags">
+                    <span class="tag t-cy">Python</span>
+                    <span class="tag t-cy">spaCy</span>
+                    <span class="tag t-cy">CamemBERT</span>
+                    <span class="tag t-cy">HuggingFace</span>
+                    <span class="tag t-cy">FAISS</span>
+                    <span class="tag t-cy">sentence-transformers</span>
+                    <span class="tag t-cy">Neo4j</span>
                     <span class="tag t-cy">PyTorch</span>
+                    <span class="tag t-cy">LangChain</span>
+                    <span class="tag t-cy">Claude API</span>
                     <span class="tag t-cy">FastAPI</span>
-                    <span class="tag t-cy">React</span>
-                    <span class="tag t-cy">Computer Vision</span>
+                    <span class="tag t-cy">PostgreSQL</span>
+                    <span class="tag t-cy">scikit-learn</span>
+                    <span class="tag t-cy">SHAP</span>
+                    <span class="tag t-cy">Docker</span>
+                    <span class="tag t-cy">Langfuse</span>
+                    <span class="tag t-cy">Bifrost</span>
                 </div>
             </div>
 
-            <div class="exp-card fu d6">
-                <div class="exp-top">
-                    <div>
-                        <div class="exp-role">Machine Learning Engineer Intern</div>
-                        <div class="exp-company">3D Smart Factory</div>
+            <!-- ── ISICOD + 3D Smart Factory — 2-column row ── -->
+            <div class="about-exp-row">
+
+                <div class="exp-card fu d6">
+                    <div class="exp-top">
+                        <div>
+                            <div class="exp-role">AI &amp; Data Engineering Intern</div>
+                            <div class="exp-company">ISICOD</div>
+                        </div>
+                        <div class="exp-period">Jun 2025 – Sep 2025 &nbsp;·&nbsp; 4 months<br>Rabat, Morocco</div>
                     </div>
-                    <div class="exp-period">Jun 2024 – Aug 2024 &nbsp;·&nbsp; 2 months<br>Mohammedia, Morocco</div>
+                    <p class="exp-desc">Co-built an end-to-end biometric AI platform for fingerprint classification &amp; ridge counting across 12 classes. Sole implementer of the Human-in-the-Loop retraining system enabling continuous model improvement in production.</p>
+                    <div class="exp-tags">
+                        <span class="tag t-cy">PyTorch</span>
+                        <span class="tag t-cy">FastAPI</span>
+                        <span class="tag t-cy">React</span>
+                        <span class="tag t-cy">Computer Vision</span>
+                    </div>
                 </div>
-                <p class="exp-desc">Applied research on 3D medical image segmentation. Implemented custom KAN layers integrated into a 3D U-Net — achieving +3% segmentation accuracy gain over the standard baseline on MRI datasets.</p>
-                <div class="exp-tags">
-                    <span class="tag t-pu">PyTorch</span>
-                    <span class="tag t-pu">TensorFlow</span>
-                    <span class="tag t-pu">3D Deep Learning</span>
-                    <span class="tag t-pu">Medical AI</span>
+
+                <div class="exp-card fu d7">
+                    <div class="exp-top">
+                        <div>
+                            <div class="exp-role">Machine Learning Engineer Intern</div>
+                            <div class="exp-company">3D Smart Factory</div>
+                        </div>
+                        <div class="exp-period">Jun 2024 – Aug 2024 &nbsp;·&nbsp; 2 months<br>Mohammedia, Morocco</div>
+                    </div>
+                    <p class="exp-desc">Applied research on 3D medical image segmentation. Implemented custom KAN layers integrated into a 3D U-Net — achieving +3% segmentation accuracy gain over the standard baseline on MRI datasets.</p>
+                    <div class="exp-tags">
+                        <span class="tag t-pu">PyTorch</span>
+                        <span class="tag t-pu">TensorFlow</span>
+                        <span class="tag t-pu">3D Deep Learning</span>
+                        <span class="tag t-pu">Medical AI</span>
+                    </div>
                 </div>
+
             </div>
 
         </div>
