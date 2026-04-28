@@ -49,10 +49,10 @@
    TOKENS
    ============================================================ */
 :root {
-    --bg:         #070B14;
-    --bg2:        #0C1225;
-    --card:       #0D1929;
-    --border:     rgba(255,255,255,0.06);
+    --bg:         #0d1526;
+    --bg2:        #0f1e35;
+    --card:       #111f38;
+    --border:     rgba(59,130,246,0.12);
     --border-hi:  rgba(59,130,246,0.35);
     --blue:       #3B82F6;
     --blue-hi:    #60A5FA;
@@ -84,7 +84,7 @@
 html{scroll-behavior:smooth}
 body{
     font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-    background:var(--bg);
+    background:linear-gradient(135deg,#0d1526 0%,#0f1e35 50%,#0d1526 100%);
     color:var(--text);
     line-height:1.7;
     overflow-x:hidden;
@@ -202,8 +202,8 @@ nav{
     will-change:transform;
 }
 nav.stuck{
-    background:rgba(7,11,20,.92);backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);padding:13px 0;
+    background:rgba(10,18,35,.92);backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);padding:13px 0;
     border-bottom-color:var(--border);
     box-shadow:0 4px 24px rgba(0,0,0,.35);
 }
@@ -400,7 +400,7 @@ nav.stuck{
 }
 .about-exp-hdr{margin-top:52px;margin-bottom:16px}
 .stat{
-    background:var(--card);border:1px solid var(--border);border-radius:var(--rl);
+    background:#111f38;border:1px solid var(--border);border-left:3px solid #3b82f6;border-radius:var(--rl);
     padding:22px;transition:border-color var(--ease),transform var(--ease);
 }
 .stat:hover{border-color:var(--border-hi);transform:translateY(-2px)}
@@ -418,8 +418,8 @@ nav.stuck{
 /* ── Featured card ──────────────────────────────────────── */
 .feat{
     position:relative;
-    background:linear-gradient(140deg,#0f2040 0%,#0d1929 55%,#0a1520 100%);
-    border:1px solid rgba(59,130,246,.28);border-radius:var(--rl);
+    background:linear-gradient(135deg,#0f2044 0%,#112038 100%);
+    border:1px solid rgba(59,130,246,.35);border-radius:var(--rl);
     padding:44px;margin-bottom:24px;overflow:hidden;
     transition:border-color .35s,transform .35s;
     box-shadow:0 0 0 1px rgba(59,130,246,.06),0 12px 44px rgba(0,0,0,.45);
