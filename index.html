@@ -588,8 +588,12 @@ nav.stuck{
 }
 .cert:hover{border-color:rgba(59,130,246,.3);transform:translateY(-2px)}
 .cert-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.cert-logo{width:32px;height:32px;border-radius:6px;object-fit:cover;flex-shrink:0}
 .cert-info h4{font-size:.875rem;font-weight:600;color:var(--text);line-height:1.35;margin-bottom:3px}
+.cert-info h4 a{color:inherit;text-decoration:none}
+.cert-info h4 a:hover{color:var(--blue-hi)}
 .cert-info span{font-size:.73rem;color:var(--text3)}
+.exp-logo{width:32px;height:32px;border-radius:6px;object-fit:cover;flex-shrink:0}
 
 /* ============================================================
    CONTACT
@@ -984,7 +988,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 <div class="exp-top">
                     <div>
                         <div class="exp-role">Data &amp; AI Engineer Intern — End-of-Studies Project (PFE)</div>
-                        <div class="exp-company">GeTeam</div>
+                        <div class="exp-company" style="display:flex;align-items:center;gap:8px"><img class="exp-logo" src="CSS_JS_IMG/Image/geteamai_logo.jpeg" alt="GeTeam">GeTeam</div>
                     </div>
                     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
                         <span class="exp-current-badge"><span class="exp-pulse"></span>Current</span>
@@ -1021,7 +1025,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                     <div class="exp-top">
                         <div>
                             <div class="exp-role">AI &amp; Data Engineering Intern</div>
-                            <div class="exp-company">ISICOD</div>
+                            <div class="exp-company" style="display:flex;align-items:center;gap:8px"><img class="exp-logo" src="CSS_JS_IMG/Image/isicod_maroc_cover.jpeg" alt="ISICOD">ISICOD</div>
                         </div>
                         <div class="exp-period">Jun 2025 – Sep 2025 &nbsp;·&nbsp; 4 months<br>Rabat, Morocco</div>
                     </div>
@@ -1038,7 +1042,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                     <div class="exp-top">
                         <div>
                             <div class="exp-role">Machine Learning Engineer Intern</div>
-                            <div class="exp-company">3D Smart Factory</div>
+                            <div class="exp-company" style="display:flex;align-items:center;gap:8px"><img class="exp-logo" src="CSS_JS_IMG/Image/3D-SMART-FACTORY1.jpg" alt="3D Smart Factory">3D Smart Factory</div>
                         </div>
                         <div class="exp-period">Jun 2024 – Aug 2024 &nbsp;·&nbsp; 2 months<br>Mohammedia, Morocco</div>
                     </div>
@@ -1522,32 +1526,32 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
         <h2 class="sec-title fu d1">Verified credentials</h2>
         <div class="certs-grid">
             <div class="cert fu d1">
-                <div class="cert-dot" style="background:#3B82F6;box-shadow:0 0 8px rgba(59,130,246,.5)"></div>
-                <div class="cert-info"><h4>BCG X Data Science Simulation</h4><span>Forage &nbsp;·&nbsp; Mar 2026</span></div>
+                <img class="cert-logo" src="CSS_JS_IMG/Image/forage logo.jpeg" alt="Forage">
+                <div class="cert-info"><h4><a href="https://www.theforage.com" target="_blank">BCG X Data Science Simulation</a></h4><span>Forage &nbsp;·&nbsp; Mar 2026</span></div>
             </div>
             <div class="cert fu d2">
-                <div class="cert-dot" style="background:#3B82F6;box-shadow:0 0 8px rgba(59,130,246,.5)"></div>
-                <div class="cert-info"><h4>BCG GenAI Consulting Simulation</h4><span>Forage &nbsp;·&nbsp; Feb 2026</span></div>
+                <img class="cert-logo" src="CSS_JS_IMG/Image/forage logo.jpeg" alt="Forage">
+                <div class="cert-info"><h4><a href="https://www.theforage.com" target="_blank">BCG GenAI Consulting Simulation</a></h4><span>Forage &nbsp;·&nbsp; Feb 2026</span></div>
             </div>
             <div class="cert fu d3">
-                <div class="cert-dot" style="background:#06B6D4;box-shadow:0 0 8px rgba(6,182,212,.5)"></div>
-                <div class="cert-info"><h4>Oracle Cloud GenAI Professional</h4><span>Oracle &nbsp;·&nbsp; Sep 2025</span></div>
+                <img class="cert-logo" src="CSS_JS_IMG/Image/oracle .jpeg" alt="Oracle">
+                <div class="cert-info"><h4><a href="https://education.oracle.com" target="_blank">Oracle Cloud GenAI Professional</a></h4><span>Oracle &nbsp;·&nbsp; Sep 2025</span></div>
             </div>
             <div class="cert fu d1">
-                <div class="cert-dot" style="background:#FBBF24;box-shadow:0 0 8px rgba(251,191,36,.5)"></div>
-                <div class="cert-info"><h4>Spark, Hadoop &amp; Snowflake — Big Data Specialization</h4><span>Duke University &nbsp;·&nbsp; Oct 2025</span></div>
+                <img class="cert-logo" src="CSS_JS_IMG/Image/duke university.png" alt="Duke University">
+                <div class="cert-info"><h4><a href="https://www.coursera.org" target="_blank">Spark, Hadoop &amp; Snowflake — Big Data Specialization</a></h4><span>Duke University &nbsp;·&nbsp; Oct 2025</span></div>
             </div>
             <div class="cert fu d2">
-                <div class="cert-dot" style="background:#FB923C;box-shadow:0 0 8px rgba(249,115,22,.5)"></div>
-                <div class="cert-info"><h4>AWS Cloud Quest: Cloud Practitioner</h4><span>Amazon Web Services &nbsp;·&nbsp; Apr 2025</span></div>
+                <img class="cert-logo" src="CSS_JS_IMG/Image/Amazon_Web_Services_Logo.svg.png" alt="AWS">
+                <div class="cert-info"><h4><a href="https://aws.amazon.com/training" target="_blank">AWS Cloud Quest: Cloud Practitioner</a></h4><span>Amazon Web Services &nbsp;·&nbsp; Apr 2025</span></div>
             </div>
             <div class="cert fu d3">
-                <div class="cert-dot" style="background:#4ADE80;box-shadow:0 0 8px rgba(34,197,94,.4)"></div>
-                <div class="cert-info"><h4>Neo4j Certified Professional</h4><span>Neo4j &nbsp;·&nbsp; Feb 2025</span></div>
+                <img class="cert-logo" src="CSS_JS_IMG/Image/Neo4j.webp" alt="Neo4j">
+                <div class="cert-info"><h4><a href="https://graphacademy.neo4j.com" target="_blank">Neo4j Certified Professional</a></h4><span>Neo4j &nbsp;·&nbsp; Feb 2025</span></div>
             </div>
             <div class="cert fu d4">
-                <div class="cert-dot" style="background:#A78BFA;box-shadow:0 0 8px rgba(139,92,246,.5)"></div>
-                <div class="cert-info"><h4>AI Agents Fundamentals</h4><span>HuggingFace &nbsp;·&nbsp; Apr 2025</span></div>
+                <img class="cert-logo" src="CSS_JS_IMG/Image/huggingface.png" alt="HuggingFace">
+                <div class="cert-info"><h4><a href="https://huggingface.co/learn" target="_blank">AI Agents Fundamentals</a></h4><span>HuggingFace &nbsp;·&nbsp; Apr 2025</span></div>
             </div>
         </div>
     </div>
