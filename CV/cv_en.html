@@ -20,8 +20,8 @@
   .header { border-bottom: 2px solid #1a56db; padding-bottom: 10px; margin-bottom: 12px; }
   .header h1 { font-size: 20px; font-weight: 700; letter-spacing: 0.5px; color: #0f172a; }
   .header .title { font-size: 11.5px; color: #1a56db; font-weight: 600; margin: 3px 0 6px; }
-  .contact-line { display: flex; flex-wrap: wrap; gap: 14px; font-size: 9.5px; color: #374151; }
-  .contact-line span { display: flex; align-items: center; gap: 3px; }
+  .contact-line { display: flex; flex-wrap: nowrap; gap: 10px; font-size: 8.5px; color: #374151; white-space: nowrap; overflow: hidden; }
+  .contact-line span { display: flex; align-items: center; gap: 3px; white-space: nowrap; }
 
   /* SECTION */
   .section { margin-bottom: 11px; }
@@ -125,6 +125,20 @@
 
   <div class="exp-item">
     <div class="exp-header">
+      <div class="exp-role">Data & AI Engineer Intern — End-of-Studies Project (PFE)</div>
+      <div class="exp-date">Mar 2026 – Present</div>
+    </div>
+    <div class="exp-company">GeTeam — Casablanca, Morocco</div>
+    <ul class="exp-bullets">
+      <li>Designing an end-to-end AI system for automatic identification of jobs of equal value — compliance with EU Pay Transparency Directive 2023/970.</li>
+      <li>Fine-tuning CamemBERT for gender bias detection (contrastive learning + adversarial debiasing); semantic ESCO mapping via FAISS + sentence-transformers + LLM reranking.</li>
+      <li>Knowledge graph in Neo4j linking 300+ French CCNs to EU ESCO taxonomy; Constitutional 3-agent LLM scoring system on 16 sub-criteria with full audit trail. SHAP explainability producing court-defensible equal-value groups.</li>
+    </ul>
+    <div class="exp-tech"><span>Stack:</span> Python · CamemBERT · FAISS · Neo4j · LangChain · Claude API · FastAPI · PostgreSQL · SHAP · Docker</div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
       <div class="exp-role">AI & Data Engineering Intern</div>
       <div class="exp-date">Jun – Sep 2025 · 4 months</div>
     </div>
@@ -182,15 +196,15 @@
 
   <div class="proj-item">
     <div class="proj-header">
-      <div class="proj-title">Financial Health Prediction — Zindi Africa Competition</div>
-      <div class="proj-date">Jan 2026</div>
+      <div class="proj-title">AFCON 2025 Morocco — AI Multilingual Assistant</div>
+      <div class="proj-date">Feb 2025</div>
     </div>
-    <div class="proj-tag">SME Credit Risk · Southern Africa · 9,600 businesses</div>
+    <div class="proj-tag">AI Agents · RAG · LangChain · Real-Time Tools</div>
     <ul class="proj-bullets">
-      <li>Built a predictive classification system for SME financial health across 4 countries (9,618 records, 47 engineered features). Gradient Boosting selected: <strong>F1 = 0.82 weighted, 78.7% accuracy</strong>.</li>
-      <li>Deployed end-to-end FastAPI scoring API with batch prediction endpoints and 1-page executive dashboard for stakeholder alignment.</li>
+      <li>Production-ready AI assistant answering real-time questions about the Africa Cup of Nations 2025 — teams, schedules, stadiums, hotels, pharmacies across Morocco.</li>
+      <li>ReAct agent combining RAG (ChromaDB) + live web search (SerpAPI) + weather API (Open-Meteo) + webpage visitor tool. Multilingual EN/FR via i18n. FastAPI + React/TypeScript.</li>
     </ul>
-    <div class="proj-tech"><span>Stack:</span> Python · XGBoost · scikit-learn · FastAPI · Pandas</div>
+    <div class="proj-tech"><span>Stack:</span> LangChain · ChromaDB · FastAPI · React · TypeScript · Gemini · SerpAPI</div>
   </div>
 
   <div class="proj-item">
