@@ -107,11 +107,11 @@ section{padding:100px 0}
 .sec-title{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
 .sec-sub{font-size:1rem;color:var(--text2);max-width:520px;line-height:1.7}
 
-/* fade-up animation — driven by IntersectionObserver */
+/* fade-up animation - driven by IntersectionObserver */
 .fu{opacity:0;transform:translateY(32px);transition:opacity .6s ease,transform .6s ease}
 .fu.vis{opacity:1;transform:none}
 .d1{transition-delay:.1s} .d2{transition-delay:.2s} .d3{transition-delay:.3s}
-.d4{transition-delay:.4s} .d5{transition-delay:.5s} .d6{transition-delay:.6s}
+.d4{transition-delay:.4s} .d5{transition-delay:.5s} .d6{transition-delay:.6s} .d7{transition-delay:.7s}
 
 /* ============================================================
    BUTTONS
@@ -247,7 +247,7 @@ nav.stuck{
 .hbg.open span:nth-child(2){opacity:0;transform:scaleX(0)}
 .hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-/* mobile overlay — opacity-based so it can animate */
+/* mobile overlay - opacity-based so it can animate */
 .mob{
     position:fixed;inset:0;background:rgba(7,11,20,.97);backdrop-filter:blur(16px);
     -webkit-backdrop-filter:blur(16px);z-index:99;
@@ -285,7 +285,7 @@ nav.stuck{
     50% {background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-/* Faint grid — fades out toward center so it doesn't compete with content */
+/* Faint grid - fades out toward center so it doesn't compete with content */
 #home::before{
     content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
     background-image:
@@ -296,7 +296,7 @@ nav.stuck{
     mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,transparent 28%,black 75%);
 }
 #cvs{position:absolute;inset:0;width:100%;height:100%;z-index:2}
-/* Main centre glow — breathes */
+/* Main centre glow - breathes */
 .hero-glow{
     position:absolute;top:8%;left:50%;transform:translateX(-50%);
     width:1100px;height:750px;pointer-events:none;z-index:2;
@@ -307,7 +307,7 @@ nav.stuck{
     0%,100%{opacity:.75;transform:translateX(-50%) scale(1)}
     50%    {opacity:1;  transform:translateX(-50%) scale(1.1)}
 }
-/* Secondary cyan orb — drifts bottom-right */
+/* Secondary cyan orb - drifts bottom-right */
 .hero-glow2{
     position:absolute;bottom:-8%;right:-4%;
     width:560px;height:560px;pointer-events:none;z-index:2;
@@ -680,7 +680,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
 .btt svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2.2}
 
 /* ============================================================
-   HERO — availability line
+   HERO - availability line
    ============================================================ */
 .hero-avail{
     font-size:.875rem;color:var(--text3);letter-spacing:.03em;margin-bottom:40px;
@@ -870,8 +870,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                         <svg class="cv-drop-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
                     <div class="cv-drop-menu">
-                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV — English</a>
-                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV — Français</a>
+                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV - English</a>
+                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV - Français</a>
                     </div>
                 </div>
                 <button class="hbg" id="hbg" aria-label="Menu">
@@ -914,8 +914,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                         <svg class="cv-drop-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
                     <div class="cv-drop-menu">
-                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV — English</a>
-                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV — Français</a>
+                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV - English</a>
+                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV - Français</a>
                     </div>
                 </div>
             </div>
@@ -945,14 +945,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 <span class="sec-label fu">About</span>
                 <h2 class="sec-title fu d1">Engineer who thinks<br>like a consultant</h2>
                 <div class="about-text fu d2">
-                    <p>I'm a final-year Data Engineering student at <strong>ENSA Al Hoceima (Morocco)</strong>, obsessed with one question: what does this data actually tell us — and what should the business do about it?</p>
-                    <p>Four years translating data into decisions: churn diagnostics for energy utilities, financial health scoring for 9,600 African SMEs, national connectivity demand modeling for Togo. Behind every insight — production pipelines on <strong>Azure Databricks</strong>, cloud-native platforms, and executive dashboards built to communicate, not just visualize. Two internships in applied AI confirmed that the hardest part is never the model — it's framing the right problem.</p>
-                    <p>What makes me different: I bring engineering precision to consulting questions. I don't just build the analysis — <strong>I deliver the recommendation.</strong></p>
+                    <p>I'm a final-year Data Engineering student at <strong>ENSA Al Hoceima (Morocco)</strong>, obsessed with one question: what does this data actually tell us - and what should the business do about it?</p>
+                    <p>Four years translating data into decisions: churn diagnostics for energy utilities, financial health scoring for 9,600 African SMEs, national connectivity demand modeling for Togo. Behind every insight - production pipelines on <strong>Azure Databricks</strong>, cloud-native platforms, and executive dashboards built to communicate, not just visualize. Two internships in applied AI confirmed that the hardest part is never the model - it's framing the right problem.</p>
+                    <p>What makes me different: I bring engineering precision to consulting questions. I don't just build the analysis - <strong>I deliver the recommendation.</strong></p>
                 </div>
             </div>
             <div class="about-photo-wrap fu d2">
                 <img src="CSS_JS_IMG/Image/profil.png"
-                     alt="Essohanam Josué KPATCHA — Data &amp; AI Engineer"
+                     alt="Essohanam Josué KPATCHA - Data &amp; AI Engineer"
                      class="about-photo">
             </div>
         </div>
@@ -960,20 +960,20 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
         <!-- ── Metrics row ────────────────────────────────── -->
         <div class="stats fu d3">
             <div class="stat">
-                <span class="stat-n">4</span>
+                <span class="stat-n">6</span>
                 <span class="stat-l">Consulting-grade case studies delivered end-to-end</span>
             </div>
             <div class="stat">
                 <span class="stat-n">0.86</span>
-                <span class="stat-l">ROC-AUC — Zindi Africa Togo Internet Uptake Prediction</span>
+                <span class="stat-l">ROC-AUC - Zindi Africa Togo Internet Uptake Prediction</span>
             </div>
             <div class="stat">
                 <span class="stat-n">0.96</span>
-                <span class="stat-l">Precision — BCG X PowerCo Churn Analysis (XGBoost)</span>
+                <span class="stat-l">Precision - BCG X PowerCo Churn Analysis (XGBoost)</span>
             </div>
             <div class="stat">
                 <span class="stat-n">0.82</span>
-                <span class="stat-l">Weighted F1 — African SME Financial Health Prediction</span>
+                <span class="stat-l">Weighted F1 - African SME Financial Health Prediction</span>
             </div>
         </div>
 
@@ -983,11 +983,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
         </div>
         <div class="about-exp">
 
-            <!-- ── GeTeam — current, full width ────────────── -->
+            <!-- ── GeTeam - current, full width ────────────── -->
             <div class="exp-card exp-card--current fu d5">
                 <div class="exp-top">
                     <div>
-                        <div class="exp-role">Data &amp; AI Engineer Intern — End-of-Studies Project (PFE)</div>
+                        <div class="exp-role">Data &amp; AI Engineer Intern - End-of-Studies Project (PFE)</div>
                         <div class="exp-company" style="display:flex;align-items:center;gap:8px"><img class="exp-logo" src="CSS_JS_IMG/Image/geteamai_logo.jpeg" alt="GeTeam">GeTeam</div>
                     </div>
                     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
@@ -995,30 +995,28 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                         <div class="exp-period">Mar 2026 – Present<br>Casablanca, Morocco</div>
                     </div>
                 </div>
-                <p class="exp-desc">Designing an end-to-end AI system to automatically identify jobs of equal value within companies — ensuring compliance with EU Pay Transparency Directive 2023/970.<br><br>
-                The system processes raw HR data through a 6-layer pipeline (ingestion to legally admissible evidence). Key work: fine-tuning CamemBERT for gender bias detection with contrastive learning; semantic ESCO occupation mapping via FAISS + sentence-transformers + LLM reranking; knowledge graph in Neo4j linking 300+ French collective agreements (CCN) to EU ESCO taxonomy; Constitutional 3-agent LLM scoring system evaluating 16 sub-criteria with full audit trail; interpretable clustering with SHAP explainability producing court-defensible equal-value groups.</p>
+                <ul class="exp-desc" style="margin:0;padding-left:1.2em;line-height:1.75">
+                    <li>Designed an AI system for automatic identification of jobs of equal value to support EU Pay Transparency Directive 2023/970 compliance.</li>
+                    <li>Pioneered a French HR gender-bias NER pipeline with no existing benchmark: curated 1,100 annotated examples (France Travail API and LLM-generated data) and fine-tuned GLiNER (XLM-RoBERTa, 183M params) on Kaggle T4 GPU.</li>
+                    <li>Achieved F1 = 65.7% micro-avg across 4 bias categories (+15 pts vs. zero-shot), F1 = 80.6% on gender traits and 76.5% on leadership inflation.</li>
+                    <li>Built the full pipeline: HMAC-SHA256 pseudonymized HR ingestion, ESCO job mapping via FAISS embeddings, agentic LLM scoring (Bifrost/OpenRouter, EIGE-aligned), Ward Hierarchical Clustering with silhouette-based k selection, and IF-THEN rule extraction (DecisionTree, max_depth=4) for audit-ready reports.</li>
+                </ul>
                 <div class="exp-tags">
                     <span class="tag t-cy">Python</span>
-                    <span class="tag t-cy">spaCy</span>
-                    <span class="tag t-cy">CamemBERT</span>
-                    <span class="tag t-cy">HuggingFace</span>
-                    <span class="tag t-cy">FAISS</span>
-                    <span class="tag t-cy">sentence-transformers</span>
-                    <span class="tag t-cy">Neo4j</span>
                     <span class="tag t-cy">PyTorch</span>
-                    <span class="tag t-cy">LangChain</span>
-                    <span class="tag t-cy">Claude API</span>
-                    <span class="tag t-cy">FastAPI</span>
-                    <span class="tag t-cy">PostgreSQL</span>
-                    <span class="tag t-cy">scikit-learn</span>
-                    <span class="tag t-cy">SHAP</span>
+                    <span class="tag t-cy">GLiNER</span>
+                    <span class="tag t-cy">XLM-RoBERTa</span>
+                    <span class="tag t-cy">Fine-tuning</span>
+                    <span class="tag t-cy">FAISS</span>
+                    <span class="tag t-cy">LLM Agents</span>
+                    <span class="tag t-cy">Ward Clustering</span>
                     <span class="tag t-cy">Docker</span>
-                    <span class="tag t-cy">Langfuse</span>
-                    <span class="tag t-cy">Bifrost</span>
+                    <span class="tag t-cy">JIRA</span>
+                    <span class="tag t-cy">GitHub</span>
                 </div>
             </div>
 
-            <!-- ── ISICOD + 3D Smart Factory — 2-column row ── -->
+            <!-- ── ISICOD + 3D Smart Factory - 2-column row ── -->
             <div class="about-exp-row">
 
                 <div class="exp-card fu d6">
@@ -1046,7 +1044,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                         </div>
                         <div class="exp-period">Jun 2024 – Aug 2024 &nbsp;·&nbsp; 2 months<br>Mohammedia, Morocco</div>
                     </div>
-                    <p class="exp-desc">Applied research on 3D medical image segmentation. Implemented custom KAN layers integrated into a 3D U-Net — achieving +3% segmentation accuracy gain over the standard baseline on MRI datasets.</p>
+                    <p class="exp-desc">Applied research on 3D medical image segmentation. Implemented custom KAN layers integrated into a 3D U-Net - achieving +3% segmentation accuracy gain over the standard baseline on MRI datasets.</p>
                     <div class="exp-tags">
                         <span class="tag t-pu">PyTorch</span>
                         <span class="tag t-pu">TensorFlow</span>
@@ -1083,7 +1081,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
             <div class="feat-grid">
                 <!-- Left: title + context + CTA -->
                 <div class="feat-meta">
-                    <h3>Why PowerCo's Customers Churn — and What To Do About It</h3>
+                    <h3>Why PowerCo's Customers Churn - and What To Do About It</h3>
                     <p>Energy utility · 14,600 customers · 193,000 pricing records · One bold hypothesis reframed.</p>
                     <a href="https://github.com/kpatc/PowerCo-Churn-Prediction-BCG" target="_blank" rel="noopener" class="btn-gh">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -1112,7 +1110,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                             <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
                             Impact
                         </h5>
-                        <p>Price is <strong>NOT the main driver</strong> — margin and customer segment are. Prioritize retention on low-margin, high-churn segments. <strong>XGBoost: ROC-AUC = 0.68, Precision = 0.96.</strong></p>
+                        <p>Price is <strong>NOT the main driver</strong> - margin and customer segment are. Prioritize retention on low-margin, high-churn segments. <strong>XGBoost: ROC-AUC = 0.68, Precision = 0.96.</strong></p>
                     </div>
                 </div>
             </div>
@@ -1123,7 +1121,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
         <!-- ═══════════════════════════════════════════════ -->
         <div class="cases-grid">
 
-            <!-- Case 2 — BCG GenAI / Purple -->
+            <!-- Case 2 - BCG GenAI / Purple -->
             <div class="ccard ccard-pu fu d1">
                 <div class="ccard-head">
                     <span class="tag t-pu">BCG GenAI Consulting Simulation</span>
@@ -1161,7 +1159,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Case 3 — Zindi Africa / Orange -->
+            <!-- Case 3 - Zindi Africa / Orange -->
             <div class="ccard ccard-or fu d2">
                 <div class="ccard-head">
                     <span class="tag t-or">Zindi Africa Competition</span>
@@ -1199,11 +1197,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Case 4 — Job Intelligence / Green
+            <!-- Case 4 - Job Intelligence / Green
             <div class="ccard ccard-gn fu d3">
                 <div class="ccard-head">
                     <span class="tag t-gn">Data Engineering · Analytics</span>
-                    <h3>Job Market Intelligence Platform — Skills Really In Demand</h3>
+                    <h3>Job Market Intelligence Platform - Skills Really In Demand</h3>
                 </div>
                 <div class="ccard-sections">
                     <div class="csec csec-prob">
@@ -1237,11 +1235,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div> -->
 
-            <!-- Case 5 — Togo Internet / Gold -->
+            <!-- Case 5 - Togo Internet / Gold -->
             <div class="ccard ccard-cy fu d1">
                 <div class="ccard-head">
                     <span class="tag t-go">Zindi Africa Competition · National Impact</span>
-                    <h3>Togo National Internet Connectivity — Demand Prediction</h3>
+                    <h3>Togo National Internet Connectivity - Demand Prediction</h3>
                 </div>
                 <div class="ccard-sections">
                     <div class="csec csec-prob">
@@ -1275,7 +1273,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Case 6 — Lakehouse / Blue
+            <!-- Case 6 - Lakehouse / Blue
             <div class="ccard ccard-bl fu d2">
                 <div class="ccard-head">
                     <span class="tag t-bl">Data Engineering · Azure Databricks</span>
@@ -1313,6 +1311,84 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div> -->
 
+            <!-- Case 7 - A/B Intelligence / Green -->
+            <div class="ccard ccard-gn fu d2">
+                <div class="ccard-head">
+                    <span class="tag t-gn">Statistical Testing</span>
+                    <span class="tag t-gn">Bayesian Inference</span>
+                    <h3>Marketing A/B Intelligence - Statistical Testing Framework</h3>
+                </div>
+                <div class="ccard-sections">
+                    <div class="csec csec-prob">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </span>
+                        <p>An e-commerce team redesigned their landing page and needed <strong>statistical proof</strong> - not intuition - to decide whether to deploy it to 100% of traffic.</p>
+                    </div>
+                    <div class="csec csec-appr">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </span>
+                        <p>Ran a <strong>frequentist + Bayesian dual analysis</strong> on 294,478 visitors (50/50 split, 6 sanity checks passed). Bootstrap 95% CI [-0.0039, +0.0008], PyMC Beta-Binomial model. Segmentation via logistic regression with interaction terms across time, device, and user type.</p>
+                    </div>
+                    <div class="csec csec-impa">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </span>
+                        <p>P(B &gt; A) = 9.9%, expected loss <strong>29x higher</strong> for Treatment. Returning users significantly harmed (p = 0.037), weekends amplify effect (p = 0.046). Recommendation: <strong>do not deploy</strong> - backed by 3 independent statistical methods.</p>
+                    </div>
+                </div>
+                <div class="ccard-foot">
+                    <span class="tag t-gn">Python · SciPy · PyMC · StatsModels · Streamlit</span>
+                    <a href="https://github.com/kpatc/marketing-ab-intelligence" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Case 8 - AfriPower Forecast / Blue -->
+            <div class="ccard ccard-bl fu d3">
+                <div class="ccard-head">
+                    <span class="tag t-bl">Time Series Forecasting</span>
+                    <span class="tag t-bl">Energy Analytics</span>
+                    <h3>AfriPower Forecast - Electricity Demand Forecasting</h3>
+                </div>
+                <div class="ccard-sections">
+                    <div class="csec csec-prob">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </span>
+                        <p>Electricity grid operators in Morocco needed accurate <strong>short-term demand forecasts</strong> (Day+1 to Day+7) to optimize production and prevent overload across distribution zones.</p>
+                    </div>
+                    <div class="csec csec-appr">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </span>
+                        <p>Built a probabilistic forecasting system on <strong>60,991 rows × 43 features</strong> (temporal lags, rolling stats, weather, cyclic calendar encoding). Benchmarked SARIMA, Prophet, XGBoost, LSTM. MLflow experiment tracking.</p>
+                    </div>
+                    <div class="csec csec-impa">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </span>
+                        <p>LightGBM selected: <strong>MAE = 0.118, RMSE = 0.204</strong>, 80% prediction intervals. SHAP explainability identifies temperature and hour-of-day as primary drivers. FastAPI endpoint + 4-tab Streamlit executive dashboard deployed.</p>
+                    </div>
+                </div>
+                <div class="ccard-foot">
+                    <span class="tag t-bl">Python · LightGBM · SHAP · MLflow · FastAPI · Streamlit</span>
+                    <a href="https://github.com/kpatc/afripower-forecast" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -1322,15 +1398,38 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
     <div class="container">
         <span class="sec-label fu">Technical Projects</span>
         <h2 class="sec-title fu d1">Engineering depth<br>across the full stack</h2>
-        <p class="sec-sub fu d2">Selected projects demonstrating technical breadth — from AI agents to data platforms.</p>
+        <p class="sec-sub fu d2">Selected projects demonstrating technical breadth - from AI agents to data platforms.</p>
 
         <div class="proj-grid">
 
-            <!-- Card 1 — AFCON 2025 Assistant -->
+            <!-- Card 1 - DS Interview Coach -->
             <div class="proj-card fu d1">
+                <span class="tag t-pu">AI Agents · RAG · Agentic Pipeline</span>
+                <div class="proj-title">DS Interview Coach - Agentic RAG System</div>
+                <p class="proj-desc">Production-grade agentic RAG for BCG X and McKinsey QuantumBlack interview prep. 900+ chunks from Glassdoor, Reddit, YouTube, and real OA screenshots. 4-agent pipeline: Retriever (HyDE + multi-query + RRF + cross-encoder rerank), Cross-Checker (conflict detection), Generator (streaming), Critic (quality gate 7.5/10 with auto re-retrieval). Fully traced in Langfuse. Ragas evaluation pipeline with regression gate.</p>
+                <div class="proj-foot">
+                    <div class="proj-tags">
+                        <span class="tag t-pu">LangChain</span>
+                        <span class="tag t-pu">FAISS</span>
+                        <span class="tag t-pu">BM25</span>
+                        <span class="tag t-pu">Groq</span>
+                        <span class="tag t-pu">Langfuse</span>
+                        <span class="tag t-pu">Ragas</span>
+                        <span class="tag t-pu">FastAPI</span>
+                        <span class="tag t-pu">React</span>
+                    </div>
+                    <a href="https://github.com/kpatc/ds-interview-coach" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 - AFCON 2025 Assistant -->
+            <div class="proj-card fu d2">
                 <span class="tag t-pu">AI Agents · RAG · Multilingual</span>
-                <div class="proj-title">AFCON 2025 Morocco — Intelligent AI Assistant</div>
-                <p class="proj-desc">Production-ready multilingual AI assistant for the Africa Cup of Nations 2025. ReAct agent (LangChain) combining RAG on local knowledge base (ChromaDB) + live web search (SerpAPI) + weather API (Open-Meteo) + webpage visitor tool — answering any question about teams, schedules, stadiums, hotels, pharmacies in real time.</p>
+                <div class="proj-title">AFCON 2025 Morocco - Intelligent AI Assistant</div>
+                <p class="proj-desc">Production-ready multilingual AI assistant for the Africa Cup of Nations 2025. ReAct agent (LangChain) combining RAG on local knowledge base (ChromaDB) + live web search (SerpAPI) + weather API (Open-Meteo) + webpage visitor tool - answering any question about teams, schedules, stadiums, hotels, pharmacies in real time.</p>
                 <div class="proj-foot">
                     <div class="proj-tags">
                         <span class="tag t-pu">LangChain</span>
@@ -1349,10 +1448,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Card 2 — Job Intelligence -->
-            <div class="proj-card fu d2">
+            <!-- Card 3 - Job Intelligence -->
+            <div class="proj-card fu d3">
                 <span class="tag t-gn">Data Engineering · Analytics</span>
-                <div class="proj-title">Job Market Intelligence Platform — Skills Really In Demand</div>
+                <div class="proj-title">Job Market Intelligence Platform - Skills Really In Demand</div>
                 <p class="proj-desc">Automated scraping of Morocco data job listings (Indeed, ReKrute) with HDBSCAN clustering to segment archetypes and quantify skill demand. Power BI dashboards delivering prioritized skill gap recommendations.</p>
                 <div class="proj-foot">
                     <div class="proj-tags">
@@ -1367,8 +1466,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Card 3 — Lakehouse -->
-            <div class="proj-card fu d3">
+            <!-- Card 4 - Lakehouse -->
+            <div class="proj-card fu d4">
                 <span class="tag t-bl">Data Engineering · Azure</span>
                 <div class="proj-title">Real-Time Food Delivery Analytics Lakehouse</div>
                 <p class="proj-desc">Medallion lakehouse on Azure Databricks with real-time CDC via Debezium + Kafka and SCD Type 2 historical tracking. Optimized Delta tables via partitioning + Z-ORDER for scalable reporting workflows.</p>
@@ -1385,10 +1484,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Card 4 — DevAssist AI Agent -->
-            <div class="proj-card fu d4">
+            <!-- Card 5 - DevAssist AI Agent -->
+            <div class="proj-card fu d5">
                 <span class="tag t-pu">AI Agents · MCP</span>
-                <div class="proj-title">DevAssist — AI Agent Platform</div>
+                <div class="proj-title">DevAssist - AI Agent Platform</div>
                 <p class="proj-desc">Production-ready AI assistant combining LangGraph agents with real-time tool usage via Model Context Protocol. Integrated GitHub, Supabase, Exa MCP servers. Evaluated with DeepEval. Deployed on GKE with Terraform + Prometheus.</p>
                 <div class="proj-foot">
                     <div class="proj-tags">
@@ -1404,8 +1503,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Card 5 — Healthcare Data Platform -->
-            <div class="proj-card fu d5">
+            <!-- Card 6 - Healthcare Data Platform -->
+            <div class="proj-card fu d6">
                 <span class="tag t-cy">Data Engineering · Healthcare</span>
                 <div class="proj-title">Healthcare Data Platform &amp; Analytics Stack</div>
                 <p class="proj-desc">Scalable healthcare data platform with ETL/ELT pipelines (Airflow + Airbyte), multi-layer dbt models (bronze/silver/gold), data quality checks with Great Expectations, and interactive dashboards in Superset.</p>
@@ -1423,10 +1522,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Card 6 — Story Vision -->
-            <div class="proj-card fu d6">
+            <!-- Card 7 - Story Vision -->
+            <div class="proj-card fu d7">
                 <span class="tag t-or">Computer Vision · Deep Learning</span>
-                <div class="proj-title">Story Vision — AI Image Captioning</div>
+                <div class="proj-title">Story Vision - AI Image Captioning</div>
                 <p class="proj-desc">Full-stack AI app generating descriptive captions from images using InceptionV3 encoder + LSTM decoder with attention mechanism. FastAPI backend with async file handling, React frontend with drag-and-drop and dark mode.</p>
                 <div class="proj-foot">
                     <div class="proj-tags">
@@ -1460,7 +1559,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 <img src="CSS_JS_IMG/Image/ensah.png" alt="ENSA Al Hoceima" class="edu-logo">
                 <div class="edu-body">
                     <h3>Ecole Nationale des Sciences Appliquées d'Al Hoceima</h3>
-                    <p>Engineer's Degree — Data Engineering</p>
+                    <p>Engineer's Degree - Data Engineering</p>
                     <div class="edu-meta">
                         <span>Oct 2023 – 2026</span>
                         <span class="tag t-bl">Current · Final Year</span>
@@ -1473,7 +1572,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 <img src="CSS_JS_IMG/Image/ensaf.png" alt="ENSA Fès" class="edu-logo">
                 <div class="edu-body">
                     <h3>Ecole Nationale des Sciences Appliquées de Fès</h3>
-                    <p>Integrated Preparatory Classes — Applied Mathematics</p>
+                    <p>Integrated Preparatory Classes - Applied Mathematics</p>
                     <div class="edu-meta">
                         <span>Oct 2021 – Jul 2023</span>
                         <span class="tag t-gn">Completed</span>
@@ -1562,7 +1661,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
             </div>
             <div class="cert fu d1">
                 <img class="cert-logo" src="CSS_JS_IMG/Image/duke university.png" alt="Duke University">
-                <div class="cert-info"><h4><a href="https://www.coursera.org" target="_blank">Spark, Hadoop &amp; Snowflake — Big Data Specialization</a></h4><span>Duke University &nbsp;·&nbsp; Oct 2025</span></div>
+                <div class="cert-info"><h4><a href="https://www.coursera.org" target="_blank">Spark, Hadoop &amp; Snowflake - Big Data Specialization</a></h4><span>Duke University &nbsp;·&nbsp; Oct 2025</span></div>
             </div>
             <div class="cert fu d2">
                 <img class="cert-logo" src="CSS_JS_IMG/Image/Amazon_Web_Services_Logo.svg.png" alt="AWS">
@@ -1588,7 +1687,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
             <h2 class="contact-h fu d1">Let's talk data<br>&amp; strategy</h2>
             <p class="contact-sub fu d2">
                 Open to consulting internships and full-time roles in data analytics &amp; AI.<br>
-                Based in Morocco — open to relocate.
+                Based in Morocco - open to relocate.
             </p>
             <a href="mailto:josuekpatcha1@gmail.com" class="contact-email fu d3">josuekpatcha1@gmail.com</a>
             <br>
@@ -1612,8 +1711,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                         <svg class="cv-drop-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
                     <div class="cv-drop-menu">
-                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV — English</a>
-                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV — Français</a>
+                        <a href="CV/cv_en.html" target="_blank" rel="noopener" class="cv-drop-item">🇬🇧 CV - English</a>
+                        <a href="CV/cv_fr.html" target="_blank" rel="noopener" class="cv-drop-item">🇫🇷 CV - Français</a>
                     </div>
                 </div>
             </div>
@@ -1736,7 +1835,7 @@ const navLinks   = document.querySelectorAll('#navLinks a');
 const sections   = document.querySelectorAll('section[id]');
 const btt        = document.getElementById('btt');
 
-/* rAF-throttled scroll handler — keeps main thread free */
+/* rAF-throttled scroll handler - keeps main thread free */
 let rafPending = false;
 function onScroll(){
     if(rafPending) return;
@@ -1759,7 +1858,7 @@ function onScroll(){
 }
 window.addEventListener('scroll', onScroll, {passive: true});
 
-/* ── ACTIVE LINK — IntersectionObserver (non-blocking) ── */
+/* ── ACTIVE LINK - IntersectionObserver (non-blocking) ── */
 let activeId = '';
 const sectionIO = new IntersectionObserver(entries => {
     entries.forEach(entry => {
