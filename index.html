@@ -68,8 +68,8 @@
     --green:      #4ADE80;
     --green-dim:  rgba(34,197,94,0.08);
     --text:       #F1F5F9;
-    --text2:      #94A3B8;
-    --text3:      #64748B;
+    --text2:      #CBD5E1;
+    --text3:      #94A3B8;
     --r:          10px;
     --rl:         16px;
     --sh:         0 4px 24px rgba(0,0,0,0.4);
@@ -105,7 +105,7 @@ section{padding:100px 0}
 .sec-label::before{content:'';width:20px;height:1px;background:var(--blue)}
 
 .sec-title{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
-.sec-sub{font-size:1rem;color:var(--text2);max-width:520px;line-height:1.7}
+.sec-sub{font-size:1.05rem;color:var(--text2);max-width:520px;line-height:1.7}
 
 /* fade-up animation - driven by IntersectionObserver */
 .fu{opacity:0;transform:translateY(32px);transition:opacity .6s ease,transform .6s ease}
@@ -385,7 +385,7 @@ nav.stuck{
    ============================================================ */
 #about{background:var(--bg2)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.about-text p{font-size:1.025rem;color:var(--text2);line-height:1.85;margin-bottom:20px}
+.about-text p{font-size:1.075rem;color:var(--text2);line-height:1.85;margin-bottom:20px}
 .about-text p:last-child{margin-bottom:0}
 .about-text strong{color:var(--text);font-weight:600}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:52px}
@@ -488,7 +488,7 @@ nav.stuck{
 .pia-appr h5{color:var(--blue-hi)}
 .pia-impa h5{color:var(--green)}
 .pia-b h5 svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.8;flex-shrink:0}
-.pia-b p{font-size:.845rem;color:var(--text2);line-height:1.72}
+.pia-b p{font-size:.9rem;color:var(--text2);line-height:1.72}
 .pia-b p strong{color:var(--text);font-weight:600}
 
 /* ── Tag chips ───────────────────────────────────────────── */
@@ -515,7 +515,7 @@ nav.stuck{
 .ccard-bl:hover{border-color:rgba(59,130,246,.48); transform:translateY(-4px);box-shadow:0 0 0 1px rgba(59,130,246,.08), 0 0 40px rgba(59,130,246,.15), 0 22px 56px rgba(0,0,0,.5)}
 /* Card head: tag + title */
 .ccard-head{padding:20px 22px 16px;display:flex;flex-direction:column;gap:11px}
-.ccard-head h3{font-size:.975rem;font-weight:700;line-height:1.42;color:var(--text)}
+.ccard-head h3{font-size:1.025rem;font-weight:700;line-height:1.42;color:var(--text)}
 /* Stacked PIA sections */
 .ccard-sections{display:flex;flex-direction:column;flex:1}
 .csec{padding:12px 22px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:6px}
@@ -527,7 +527,7 @@ nav.stuck{
 .csec-prob .csec-label{color:rgba(252,129,129,.9)}
 .csec-appr .csec-label{color:var(--blue-hi)}
 .csec-impa .csec-label{color:var(--green)}
-.csec p{font-size:.82rem;color:var(--text2);line-height:1.68}
+.csec p{font-size:.875rem;color:var(--text2);line-height:1.68}
 .csec p strong{color:var(--text);font-weight:600}
 /* Footer: tech tags + GitHub link */
 .ccard-foot{
@@ -589,7 +589,7 @@ nav.stuck{
 .cert:hover{border-color:rgba(59,130,246,.3);transform:translateY(-2px)}
 .cert-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
 .cert-logo{width:32px;height:32px;border-radius:6px;object-fit:cover;flex-shrink:0}
-.cert-info h4{font-size:.875rem;font-weight:600;color:var(--text);line-height:1.35;margin-bottom:3px}
+.cert-info h4{font-size:.925rem;font-weight:600;color:var(--text);line-height:1.35;margin-bottom:3px}
 .cert-info h4 a{color:inherit;text-decoration:none}
 .cert-info h4 a:hover{color:var(--blue-hi)}
 .cert-info span{font-size:.73rem;color:var(--text3)}
@@ -726,7 +726,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
 .exp-role{font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:4px}
 .exp-company{font-size:.85rem;font-weight:600;color:var(--blue-hi)}
 .exp-period{font-size:.75rem;color:var(--text3);text-align:right;flex-shrink:0;line-height:1.65}
-.exp-desc{font-size:.88rem;color:var(--text2);line-height:1.82;margin-bottom:16px}
+.exp-desc{font-size:.925rem;color:var(--text2);line-height:1.82;margin-bottom:16px}
 .exp-tags{display:flex;flex-wrap:wrap;gap:7px}
 
 /* ============================================================
@@ -742,8 +742,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
 .edu-card:hover{border-color:rgba(59,130,246,.3);transform:translateY(-2px)}
 .edu-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;margin-top:6px}
 .edu-body{flex:1}
-.edu-body h3{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.4}
-.edu-body p{font-size:.83rem;color:var(--text2);margin-bottom:10px}
+.edu-body h3{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.4}
+.edu-body p{font-size:.88rem;color:var(--text2);margin-bottom:10px}
 .edu-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .edu-meta > span{font-size:.73rem;color:var(--text3)}
 .edu-logo{
@@ -765,8 +765,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
     transition:border-color var(--ease),transform var(--ease);
 }
 .proj-card:hover{border-color:var(--border-hi);transform:translateY(-2px)}
-.proj-title{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.4}
-.proj-desc{font-size:.8rem;color:var(--text2);line-height:1.72;flex:1}
+.proj-title{font-size:.95rem;font-weight:700;color:var(--text);line-height:1.4}
+.proj-desc{font-size:.855rem;color:var(--text2);line-height:1.72;flex:1}
 .proj-foot{
     display:flex;align-items:center;justify-content:space-between;gap:8px;
     flex-wrap:wrap;padding-top:10px;border-top:1px solid var(--border);margin-top:auto;
