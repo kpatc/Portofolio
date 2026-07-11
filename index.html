@@ -996,23 +996,23 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                     </div>
                 </div>
                 <ul class="exp-desc" style="margin:0;padding-left:1.2em;line-height:1.75">
-                    <li>Designed an AI system for automatic identification of jobs of equal value to support EU Pay Transparency Directive 2023/970 compliance.</li>
-                    <li>Pioneered a French HR gender-bias NER pipeline with no existing benchmark: curated 1,100 annotated examples (France Travail API and LLM-generated data) and fine-tuned GLiNER (XLM-RoBERTa, 183M params) on Kaggle T4 GPU.</li>
-                    <li>Achieved F1 = 65.7% micro-avg across 4 bias categories (+15 pts vs. zero-shot), F1 = 80.6% on gender traits and 76.5% on leadership inflation.</li>
-                    <li>Built the full pipeline: HMAC-SHA256 pseudonymized HR ingestion, ESCO job mapping via FAISS embeddings, agentic LLM scoring (Bifrost/OpenRouter, EIGE-aligned), Ward Hierarchical Clustering with silhouette-based k selection, and IF-THEN rule extraction (DecisionTree, max_depth=4) for audit-ready reports.</li>
+                    <li>Developed and deployed an end-to-end AI system for EU Pay Transparency Directive 2023/970 compliance, translating a complex regulatory problem into a production solution used by HR teams.</li>
+                    <li>Fine-tuned GLiNER/XLM-RoBERTa (183M params, PEFT) on 1,100 annotated examples, achieving F1 = 65.7% micro-avg (+15 pts vs. zero-shot) on gender bias detection in French HR documents, no benchmark existed.</li>
+                    <li>Orchestrated 3 parallel LLM agents (Bifrost/OpenRouter) with consensus scoring and full Langfuse observability; applied multiple clustering algorithms (Ward Hierarchical, KMeans, GM) and model selection with IF-THEN rule extraction for interpretable audit reports.</li>
+                    <li>Delivered a Full Stack application (FastAPI + React with SSE streaming and 2D cluster visualizations), Docker images, and GitHub Actions CI/CD pipeline.</li>
                 </ul>
                 <div class="exp-tags">
                     <span class="tag t-cy">Python</span>
                     <span class="tag t-cy">PyTorch</span>
                     <span class="tag t-cy">GLiNER</span>
-                    <span class="tag t-cy">XLM-RoBERTa</span>
-                    <span class="tag t-cy">Fine-tuning</span>
-                    <span class="tag t-cy">FAISS</span>
-                    <span class="tag t-cy">LLM Agents</span>
-                    <span class="tag t-cy">Ward Clustering</span>
+                    <span class="tag t-cy">LangChain</span>
+                    <span class="tag t-cy">Langfuse</span>
+                    <span class="tag t-cy">Bifrost</span>
+                    <span class="tag t-cy">FastAPI</span>
+                    <span class="tag t-cy">React</span>
                     <span class="tag t-cy">Docker</span>
+                    <span class="tag t-cy">GitLab</span>
                     <span class="tag t-cy">JIRA</span>
-                    <span class="tag t-cy">GitHub</span>
                 </div>
             </div>
 
@@ -1117,7 +1117,51 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
         </div>
 
         <!-- ═══════════════════════════════════════════════ -->
-        <!-- CASE CARD GRID (5 cards)                      -->
+        <!-- FEATURED CASE STUDY 2 - NovaMart             -->
+        <!-- ═══════════════════════════════════════════════ -->
+        <div class="feat fu d1">
+            <div class="feat-top">
+                <span class="feat-badge">★ Featured Case Study</span>
+                <span class="tag t-bl">Advanced Analytics · Strategic Recommendations</span>
+            </div>
+            <div class="feat-grid">
+                <div class="feat-meta">
+                    <h3>NovaMart Retail Intelligence - End-to-End Advanced Analytics</h3>
+                    <p>Retail · 504,038 transactions · 800 stores · 316K loyalty members · 36-month gross margin decline diagnosed.</p>
+                    <a href="https://github.com/kpatc/novamart-retail-intelligence" target="_blank" rel="noopener" class="btn-gh">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        View on GitHub
+                        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 2H2v8h8V7.5M7 1h4v4M10 1L5.5 5.5"/></svg>
+                    </a>
+                </div>
+                <div class="pia">
+                    <div class="pia-b pia-prob">
+                        <h5>
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </h5>
+                        <p>A retail group faced a sustained gross margin decline from <strong>42.0% to 31.8%</strong> over 36 months across 504,038 transactions, 800 stores, and 316K loyalty members. Root cause was unknown.</p>
+                    </div>
+                    <div class="pia-b pia-appr">
+                        <h5>
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </h5>
+                        <p>Diagnosed COGS inflation as root cause via <strong>OLS regression (R² = 0.917, p &lt; 0.001)</strong>. Tested 5 pre-specified hypotheses (ANOVA, Welch t-test, Mann-Whitney U, Pearson r) with effect sizes. Built 4 production ML models: churn XGBoost, store RF, Marketing Mix Model with Adstock, price elasticity OLS. SHAP + MLflow throughout.</p>
+                    </div>
+                    <div class="pia-b pia-impa">
+                        <h5>
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </h5>
+                        <p><strong>8 RICE-scored recommendations totaling $32.4M</strong> addressable annual impact: $23.4M urban digital reallocation, Silver tier loyalty rescue ($8-12M at risk). Churn AUC = 0.98, store RF R² = 0.87. Streamlit executive dashboard with <strong>GenAI copilot</strong> (Claude API, tool-use pattern).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- CASE CARD GRID                                -->
         <!-- ═══════════════════════════════════════════════ -->
         <div class="cases-grid">
 
@@ -1311,8 +1355,46 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div> -->
 
-            <!-- Case 7 - A/B Intelligence / Green -->
-            <div class="ccard ccard-gn fu d2">
+            <!-- Case 7 - MicroLend Recommender / Orange -->
+            <div class="ccard ccard-or fu d2">
+                <div class="ccard-head">
+                    <span class="tag t-or">Recommendation Systems · Matrix Factorization</span>
+                    <h3>MicroLend Recommender - Financial Product Recommendation for African SMEs</h3>
+                </div>
+                <div class="ccard-sections">
+                    <div class="csec csec-prob">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.8c0-.9 1.3-.9 1.3 0C8.3 5.8 7 6.3 7 7.2M7 9.2v.3"/></svg>
+                            Problem
+                        </span>
+                        <p>50M+ underserved SMEs across Sub-Saharan and North Africa receive <strong>no personalized financial product recommendations</strong> from MFIs, driving product-client mismatches and high default rates.</p>
+                    </div>
+                    <div class="csec csec-appr">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round"><circle cx="7" cy="7" r="2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2M3.1 3.1l1.4 1.4M9.5 9.5l1.4 1.4M3.1 10.9l1.4-1.4M9.5 4.5l1.4-1.4"/></svg>
+                            Approach
+                        </span>
+                        <p>Benchmarked 5 algorithms: User-Based CF, Item-Based CF with cross-selling rules, <strong>SVD/NMF matrix factorization</strong>, Neural CF (GMF+MLP, PyTorch). 5-fold CV with MLflow tracking. Best model promoted via champion alias in MLflow 3.14 Model Registry.</p>
+                    </div>
+                    <div class="csec csec-impa">
+                        <span class="csec-label">
+                            <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
+                            Impact
+                        </span>
+                        <p><strong>Cold-Start Solver</strong> for new SMEs with zero interaction history, with confidence scores and automatic CF handoff. FastAPI REST service + Bootstrap 5 interface for loan officers. 14 passing pytest tests.</p>
+                    </div>
+                </div>
+                <div class="ccard-foot">
+                    <span class="tag t-or">Python · PyTorch · scikit-surprise · MLflow · FastAPI · scikit-learn</span>
+                    <a href="https://github.com/kpatc/microlend-recommender" target="_blank" rel="noopener" class="btn-gh-sm">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Case 8 - A/B Intelligence / Green -->
+            <div class="ccard ccard-gn fu d3">
                 <div class="ccard-head">
                     <span class="tag t-gn">Statistical Testing · Bayesian Inference</span>
                     <h3>Marketing A/B Intelligence - Statistical Testing Framework</h3>
@@ -1337,7 +1419,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                             <svg viewBox="0 0 14 14" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,11 4,7.5 6.5,9 9.5,4.5 13,6"/><polyline points="9.5,4.5 13,4.5 13,8"/></svg>
                             Impact
                         </span>
-                        <p>P(B &gt; A) = 9.9%, expected loss <strong>29x higher</strong> for Treatment. Returning users harmed (p = 0.037). Recommendation: <strong>do not deploy</strong> — 3 independent methods agree.</p>
+                        <p>P(B &gt; A) = 9.9%, expected loss <strong>29x higher</strong> for Treatment. Returning users harmed (p = 0.037). Recommendation: <strong>do not deploy</strong> - 3 independent methods agree.</p>
                     </div>
                 </div>
                 <div class="ccard-foot">
@@ -1349,8 +1431,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 0}
                 </div>
             </div>
 
-            <!-- Case 8 - AfriPower Forecast / Blue -->
-            <div class="ccard ccard-bl fu d3">
+            <!-- Case 9 - AfriPower Forecast / Blue -->
+            <div class="ccard ccard-bl fu d4">
                 <div class="ccard-head">
                     <span class="tag t-bl">Time Series Forecasting · Energy Analytics</span>
                     <h3>AfriPower Forecast - Electricity Demand Forecasting</h3>
